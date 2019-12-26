@@ -1,0 +1,44 @@
+
+#Elements of the label of the list
+employer.job.list.label.reference = Reference
+employer.job.list.label.title = Title
+employer.job.list.label.deadline = Deadline
+employer.job.list.label.status = Status
+#Elements label of the form
+employer.job.form.label.reference = Reference
+employer.job.form.label.status = Status
+employer.job.form.label.title = Title
+employer.job.form.label.deadline = Deadline
+employer.job.form.label.salary = Salary 
+employer.job.form.label.moreInfo = More Info
+employer.job.form.label.description = Description
+employer.job.form.label.descriptor.description = Descriptor description
+employer.job.form.label.finalMode = final version?
+
+employer.job.form.label.duty.title = Duty title
+
+employer.job.form.button.auditRecord = AuditRecords
+employer.job.form.button.return = Return
+employer.job.form.button.duties = Duties
+
+employer.job.errors.must-BeFuture = Must be in future.
+
+employer.job.form.label.duty.title = Duty Title
+employer.job.form.label.duty.description = Duty Description
+employer.job.form.label.duty.percentage = Time Percentage
+
+employer.job.form.button.duty = Duties
+employer.job.form.button.create = Create
+employer.job.form.button.crear-duty = Create Duty
+employer.job.form.button.update = Update
+employer.job.form.button.delete = Delete
+employer.job.update.error.status = Satus must be PUBLISHED or DRAFTED in UpperCase.
+employer.job.update.errors.deadline = Deadline at least seven days after the current one.
+employer.job.update.errors.salary.currency = Put €, EUR, $, USD depending on the currency of the country.
+employer.job.create.error-descriptor-duties.finalMode = Sum of the percentages of the duties is not 100.00, it cannot be in the final version.
+employer.job.create.error.duties-is-empty = Duties is empty, it cannot be in the final version.
+employer.job.create.error.wrong.status = Is not in final Mode, status must be DRAFTED.
+employer.job.create.error.is-spam =  Contains a Spam Word
+employer.job.create.error.descriptor-is-empty = The job don't have descriptor so it cannot be saved in final version.
+employer.job.delete.error.application-not-null = The job cannot be deleted, because it have applications.
+

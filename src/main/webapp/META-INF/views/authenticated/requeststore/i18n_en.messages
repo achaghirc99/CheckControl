@@ -1,0 +1,15 @@
+authenticated.requeststore.list.label.title = Title
+authenticated.requeststore.list.label.moment = Moment
+authenticated.requeststore.list.label.deadline = Deadline
+authenticated.requeststore.list.label.text = Text
+authenticated.requeststore.list.label.reward = Reward
+authenticated.requeststore.list.label.ticker = Ticker
+
+authenticated.requeststore.form.label.title = Title
+authenticated.requeststore.form.label.moment = Moment
+authenticated.requeststore.form.label.deadline = Deadline
+authenticated.requeststore.form.label.text = Text
+authenticated.requeststore.form.label.reward = Reward
+authenticated.requeststore.form.label.ticker = Ticker
+
+authenticated.requeststore.form.button.return = Return

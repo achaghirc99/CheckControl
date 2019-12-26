@@ -1,0 +1,31 @@
+
+#Elements of the label of the list
+authenticated.job.list.label.reference = Reference
+authenticated.job.list.label.title = Title
+authenticated.job.list.label.deadline = Deadline
+
+#Elements label of the form
+authenticated.job.form.label.reference = Reference
+authenticated.job.form.label.status = Status
+authenticated.job.form.label.title = Title
+authenticated.job.form.label.deadline = Deadline
+authenticated.job.form.label.salary = Salary 
+authenticated.job.form.label.moreInfo = More Info
+authenticated.job.form.label.descriptor.description = Descriptor description
+
+authenticated.job.form.label.duty.title = Duty title
+
+authenticated.job.form.button.auditRecord = AuditRecords
+authenticated.job.form.button.return = Return
+authenticated.job.form.button.duties = Duties
+
+authenticated.job.errors.must-BeFuture = Must be in future.
+
+authenticated.job.form.label.duty.title = Duty Title
+authenticated.job.form.label.duty.description = Duty Description
+authenticated.job.form.label.duty.percentage = Time Percentage
+
+authenticated.job.form.button.duty = Duties
+worker.job.form.button = Create Application
+
+error.spam = Error: spam

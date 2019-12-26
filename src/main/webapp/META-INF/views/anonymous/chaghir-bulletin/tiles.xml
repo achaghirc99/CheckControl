@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Este documento es la forma de decir que es lo que va dentro de que. -->
+
+<!DOCTYPE tiles-definitions PUBLIC 
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="anonymous/chaghir-bulletin/form" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/chaghir-bulletin/form.jsp"/>
+	</definition>
+	
+	<definition name="anonymous/chaghir-bulletin/list" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/chaghir-bulletin/list.jsp"/>
+	</definition>
+</tiles-definitions>

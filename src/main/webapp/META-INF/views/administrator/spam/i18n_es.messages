@@ -1,0 +1,15 @@
+administrator.spam.form.label.spamWord = Palabras de Spam
+administrator.spam.form.label.threshold = Umbral
+
+administrator.spam.form.button.show = Mostrar
+administrator.spam.form.button.update = Actualizar
+administrator.spam.form.button.create = Crear
+administrator.spam.form.button.return = Volver
+administrator.spam.form.button.delete = Borrar
+
+administrator.spam.list.label.spamWord = Palabras de Spam
+administrator.spam.list.label.threshold = Umbral
+
+administrator.spam.error.empty = La palabra de spam no puede ser vacía
+administrator.spam.error.negative = El umbral no puede ser negativo
+administrator.spam.error.higher = El umbral no puede ser mayor

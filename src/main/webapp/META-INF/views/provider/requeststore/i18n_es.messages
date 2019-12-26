@@ -1,0 +1,20 @@
+provider.requeststore.list.label.title = Titulo
+provider.requeststore.list.label.moment = Momento
+provider.requeststore.list.label.deadline = Fecha Limite
+provider.requeststore.list.label.text = Texto
+provider.requeststore.list.label.reward = Recompensa
+provider.requeststore.list.label.ticker = Ticker
+
+provider.requeststore.form.label.title = Titulo
+provider.requeststore.form.label.moment = Momento
+provider.requeststore.form.label.deadline = Fecha Limite
+provider.requeststore.form.label.text = Texto
+provider.requeststore.form.label.reward = Recompensa
+provider.requeststore.form.label.ticker = Ticker
+
+provider.requeststore.form.button.create = Crear
+
+provider.requeststore.form.button.return = Volver
+
+provider.requestStore.error.must-BeFuture = Debe estar en futuro
+provider.RequestStore.error.must-BeEur = Debe estar en EUR.

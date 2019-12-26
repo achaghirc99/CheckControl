@@ -1,0 +1,31 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+
+authenticated.challenge.form.label.title = Titulo:
+authenticated.challenge.form.label.deadline = Fecha limite:
+authenticated.challenge.form.label.description = Descripcion:
+authenticated.challenge.form.label.goldGoal = Meta Oro:
+authenticated.challenge.form.label.goldReward = Recompensa Oro:
+authenticated.challenge.form.label.silverGoal = Meta Plata:
+authenticated.challenge.form.label.silverReward = Recompensa Plata:
+authenticated.challenge.form.label.bronzeGoal = Meta Bronce:
+authenticated.challenge.form.label.bronzeReward = Recompensa Bronce:
+authenticated.challenge.form.button.return = Volver
+
+authenticated.challenge.list.label.title = Titulo:
+authenticated.challenge.list.label.deadline = Fecha limite:
+authenticated.challenge.list.label.description = Descripcion:
+authenticated.challenge.list.label.goldGoal = Meta Oro:
+authenticated.challenge.list.label.goldReward = Recompensa Oro:
+authenticated.challenge.list.label.silverGoal = Meta Plata:
+authenticated.challenge.list.label.silverReward = Recompensa Plata:
+authenticated.challenge.list.label.bronzeGoal = Meta Bronce:
+authenticated.challenge.list.label.bronzeReward = Recompensa Bronce:

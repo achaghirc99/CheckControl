@@ -1,0 +1,19 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+anonymous.reneses-bulletin.form.label.name = Name:
+anonymous.reneses-bulletin.form.label.nationality = Nationality:
+anonymous.reneses-bulletin.form.button.create = Create Bulletin
+anonymous.reneses-bulletin.form.button.return = Return
+
+
+anonymous.reneses-bulletin.list.label.moment = Moment
+anonymous.reneses-bulletin.list.label.name = Name
+anonymous.reneses-bulletin.list.label.nationality = Nationality

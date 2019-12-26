@@ -1,0 +1,17 @@
+administrator.commercialbanner.form.label.picture = Imagen
+administrator.commercialbanner.form.label.slogan = Eslogan
+administrator.commercialbanner.form.label.targetUrl = URL Destino
+administrator.commercialbanner.form.label.creditCard = Tarjeta de Crédito
+
+administrator.commercialbanner.form.button.return = Volver
+
+administrator.commercialbanner.list.label.picture = Imagen
+administrator.commercialbanner.list.label.slogan = Eslogan
+administrator.commercialbanner.list.label.targetUrl = URL Destino
+administrator.commercialbanner.list.label.creditCard = Tarjeta de Crédito
+
+administrator.commercialbanner.form.button.update = Actualizar
+administrator.commercialbanner.form.button.delete = Borrar
+administrator.commercialbanner.form.button.create = Crear
+
+error.spam = Error: spam

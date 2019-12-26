@@ -1,0 +1,35 @@
+
+#Elementos del label de la lista
+employer.job.list.label.reference = Referencia
+employer.job.list.label.title = Titulo
+employer.job.list.label.deadline = Fecha limite
+
+#Elementos label del formulario
+employer.job.form.label.reference = Referencia
+employer.job.form.label.status = Estado
+employer.job.form.label.title = Titulo
+employer.job.form.label.deadline = Fecha limite
+employer.job.form.label.salary = Salario
+employer.job.form.label.moreInfo = Mas Informacion
+employer.job.form.label.description = Descripción
+employer.job.form.label.descriptor.description = Descriptor description
+employer.job.form.label.finalMode = ¿Es la version final?
+
+employer.job.form.button.auditRecord = AuditRecords
+employer.job.form.button.return = Volver
+employer.job.form.button.descriptor = Descriptor
+employer.job.errors.must-BeFuture = Debe estar en futuro.
+
+employer.job.form.button.duty = Deberes
+employer.job.form.button.create = Crear
+employer.job.form.button.crear-duty = Crear deberes
+
+employer.job.form.button.update = Actualizar
+employer.job.update.error.status = Satus debe ser PUBLISHED o DRAFTED en Mayusculas.
+employer.job.update.errors.deadline = Fecha limite al menos siete dias posterior a la actual.
+employer.job.update.errors.salary.currency = Poner €, EUR, $, USD dependiendo de la moneda del pais.
+employer.job.create.error-descriptor-duties.finalMode = Suma de los porcentajes de las deberes no es 100.00, no puede estar en versión final
+employer.job.create.error.duties-is-empty = Los deberes están vacíos, no puede estar en version final.
+employer.job.create.error.wrong.status = No esta en la version final, por tanto el estado debe ser DRAFTED o BORRADOR 
+employer.job.create.error.descriptor-is-empty = El trabajo no tiene descriptor, por lo tanto no puede estar en version final.
+employer.job.delete.error.application-not-null = El trabajo no puede ser eliminado porque tiene solicitudes.

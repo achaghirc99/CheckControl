@@ -1,0 +1,19 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.requestauditor.form.label.request = ¿Quiere enviar una solicitud para poder convertirte en auditor, rellene los siguientes campos?
+authenticated.requestauditor.form.label.reference = Reference
+authenticated.requestauditor.list.label.status = Estado
+authenticated.requestauditor.list.label.reference = Referencia de Usuario
+
+authenticated.requestauditor.form.button.create = Enviar
+authenticated.requestauditor.form.button.return = Volver
+authenticated.requestAuditor.error.create.reference = La referencia tiene que ser igual que tu nombre de Usuario.
+authenticated.requestAuditor.error.create.moreThanOneRequest = No puedes crear mas de una request. 

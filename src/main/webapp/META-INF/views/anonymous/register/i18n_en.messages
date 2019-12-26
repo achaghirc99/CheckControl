@@ -1,0 +1,20 @@
+#i18n_en.messages
+#
+#Design & Testing by group 70.
+#
+#
+
+
+
+anonymous.register.list.label.name = Name
+anonymous.register.list.label.sector = Sector
+anonymous.register.list.label.investmentStatement = Investment Statement
+anonymous.register.list.label.assessment = Assessment
+
+
+anonymous.register.form.label.name  = Name:
+anonymous.register.form.label.sector = Sector:
+anonymous.register.form.label.investmentStatement = Investment Statement:
+anonymous.register.form.label.assessment = Assessment: 
+anonymous.register.form.button.return = Return
+

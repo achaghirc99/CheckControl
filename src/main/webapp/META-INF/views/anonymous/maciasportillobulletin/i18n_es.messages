@@ -1,0 +1,10 @@
+anonymous.maciasportillobulletin.form.label.name = Nombre:	
+anonymous.maciasportillobulletin.form.label.hobbies = Aficiones:
+anonymous.maciasportillobulletin.form.label.city = Ciudad:	
+anonymous.maciasportillobulletin.form.button.create = Boletin	
+anonymous.maciasportillobulletin.form.button.return = Volver	
+
+anonymous.maciasportillobulletin.list.label.moment = Momento
+anonymous.maciasportillobulletin.list.label.name = Nombre	
+anonymous.maciasportillobulletin.list.label.hobbies = Aficiones
+anonymous.maciasportillobulletin.list.label.city = Ciudad

@@ -1,0 +1,15 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Desing and Testing 
+#
+
+anonymous.chaghir-bulletin.form.label.name = Name:
+anonymous.chaghir-bulletin.form.label.languages = Languages:
+anonymous.chaghir-bulletin.form.label.phone = Phone:
+anonymous.chaghir-bulletin.form.button.create = Publicate!
+anonymous.chaghir-bulletin.form.button.return = Return
+
+anonymous.chaghir-bulletin.list.label.moment = Moment:
+anonymous.chaghir-bulletin.list.label.name = Name:
+anonymous.chaghir-bulletin.list.label.languages = Language level:
+anonymous.chaghir-bulletin.list.label.phone = Phone:

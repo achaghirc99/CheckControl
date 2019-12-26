@@ -1,0 +1,20 @@
+anonymous.companyrecord.list.label.name = Name
+anonymous.companyrecord.list.label.sector = Sector
+anonymous.companyrecord.list.label.ceo = CEO's name
+anonymous.companyrecord.list.label.description = Description
+anonymous.companyrecord.list.label.url = Website
+anonymous.companyrecord.list.label.phone = Contact Phone
+anonymous.companyrecord.list.label.email = Email
+anonymous.companyrecord.list.label.evaluation = Evaluation 
+
+
+anonymous.companyrecord.form.label.name = Name
+anonymous.companyrecord.form.label.sector = Sector
+anonymous.companyrecord.form.label.ceo = CEO's name
+anonymous.companyrecord.form.label.description = Description
+anonymous.companyrecord.form.label.url = Website
+anonymous.companyrecord.form.label.phone = Contact Phone
+anonymous.companyrecord.form.label.email = Email
+anonymous.companyrecord.form.label.evaluation = Evaluation
+
+anonymous.companyrecord.form.button.return = Return

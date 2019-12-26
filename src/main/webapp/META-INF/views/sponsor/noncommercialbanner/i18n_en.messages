@@ -1,0 +1,16 @@
+sponsor.noncommercialbanner.form.label.picture = Picture
+sponsor.noncommercialbanner.form.label.slogan = Slogan
+sponsor.noncommercialbanner.form.label.targetUrl = Target URL
+sponsor.noncommercialbanner.form.label.optionalJingle = Optional Jingle
+
+sponsor.noncommercialbanner.form.button.return = Return
+sponsor.noncommercialbanner.form.button.update = Update
+sponsor.noncommercialbanner.form.button.create = Create
+sponsor.noncommercialbanner.form.button.delete = Delete
+
+sponsor.noncommercialbanner.list.label.picture = Picture
+sponsor.noncommercialbanner.list.label.slogan = Slogan
+sponsor.noncommercialbanner.list.label.targetUrl = Target URL
+sponsor.noncommercialbanner.list.label.optionalJingle = Optional Jingle
+
+error.spam = Error: spam

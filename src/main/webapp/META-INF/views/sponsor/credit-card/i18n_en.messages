@@ -1,0 +1,12 @@
+error.year = Error, expired credit card
+
+sponsor.creditcard.form.label.name = Name
+sponsor.creditcard.form.label.creditnumber = Credit Card Number
+sponsor.creditcard.form.label.cvc = CVC
+sponsor.creditcard.form.label.month = Month
+sponsor.creditcard.form.label.year = Year
+
+sponsor.form.button.create-creditcard = Create
+sponsor.form.button.update-creditcard = Update
+
+authenticated.sponsor.form.button.return = Return

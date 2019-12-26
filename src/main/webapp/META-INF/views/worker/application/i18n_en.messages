@@ -1,0 +1,18 @@
+worker.applications.form.label.referenceNumber = Reference Number
+worker.applications.form.label.moment= Moment
+worker.applications.form.label.status = Status
+worker.applications.form.label.statement = Statement
+worker.applications.form.label.skills = Skills
+worker.applications.form.label.qualifications = Qualifications
+
+worker.applications.list.label.referenceNumber = Reference Number
+worker.applications.list.label.moment= Moment
+worker.applications.list.label.status = Status
+worker.applications.list.label.statement = Statement
+worker.applications.list.label.skills = Skills
+worker.applications.list.label.qualifications = Qualifications
+
+worker.applications.form.button.return = Return
+worker.applications.form.button.create = Create
+
+error.spam = Error: spam

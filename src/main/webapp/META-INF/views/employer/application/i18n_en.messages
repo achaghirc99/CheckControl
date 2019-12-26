@@ -1,0 +1,18 @@
+employer.applications.list.label.referenceNumber = Reference Number
+employer.applications.list.label.moment = Moment
+employer.applications.list.label.status = Status
+
+employer.applications.form.label.referenceNumber = Reference Number
+employer.applications.form.label.moment= Moment
+employer.applications.form.label.status = Status
+employer.applications.form.label.statement = Statement
+employer.applications.form.label.skills = Skills
+employer.applications.form.label.qualifications = Qualifications
+employer.applications.form.label.justification = Justification
+employer.applications.form.button.return = Return
+employer.applications.form.button.update = Update
+employer.applications.form.label.status.accepted = Accepted
+employer.applications.form.label.status.pending = Pending
+employer.applications.form.label.status.rejected = Rejected
+employer.job.application.update.error.justification.rejected = If status is rejected you must provide a justification.
+employer.job.application.update.error.justification = Only rejected applications need a justification.

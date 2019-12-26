@@ -1,0 +1,19 @@
+#form.jsp
+consumer.offer.form.label.ticker = Ticker
+consumer.offer.form.label.title = Title 
+consumer.offer.form.label.moment = Moment
+consumer.offer.form.label.deadline = Deadline
+consumer.offer.form.label.text = Text
+consumer.offer.form.label.reward = Reward
+consumer.offer.form.button.return = Return!
+consumer.offer.form.button.create = Create
+consumer.offer.form.label.checkbox = Are you sure?
+#list.jsp
+consumer.offer.list.label.ticker = Ticker
+consumer.offer.list.label.title = Title 
+consumer.offer.list.label.moment = Moment
+
+consumer.offer.error.must-beCareful = Don't forget? 
+consumer.offer.error.must-beFuture = It must be in Future
+consumer.offer.error.must-beEUR = It must be in EUR
+

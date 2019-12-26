@@ -1,0 +1,16 @@
+sponsor.commercialbanner.form.label.picture = Picture
+sponsor.commercialbanner.form.label.slogan = Slogan
+sponsor.commercialbanner.form.label.targetUrl = Target URL
+sponsor.commercialbanner.form.label.creditCard = Credit Card
+
+sponsor.commercialbanner.form.button.return = Return
+sponsor.commercialbanner.form.button.update = Update
+sponsor.commercialbanner.form.button.create = Create
+sponsor.commercialbanner.form.button.delete = Delete
+
+sponsor.commercialbanner.list.label.picture = Picture
+sponsor.commercialbanner.list.label.slogan = Slogan
+sponsor.commercialbanner.list.label.targetUrl = Target URL
+sponsor.commercialbanner.list.label.creditCard = Credit Card
+
+error.spam = Error: spam

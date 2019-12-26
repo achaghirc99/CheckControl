@@ -1,0 +1,18 @@
+﻿sponsor.commercialbanner.form.label.picture = Imagen
+sponsor.commercialbanner.form.label.slogan = Eslogan
+sponsor.commercialbanner.form.label.targetUrl = URL Destino
+sponsor.commercialbanner.form.label.creditCard = Tarjeta de Crédito
+
+sponsor.commercialbanner.form.button.return = Volver
+sponsor.commercialbanner.form.button.update = Actualizars
+sponsor.commercialbanner.list.label.picture = Imagen
+sponsor.commercialbanner.list.label.slogan = Eslogan
+sponsor.commercialbanner.list.label.targetUrl = URL Destino
+sponsor.commercialbanner.list.label.creditCard = Tarjeta de Crédito
+
+sponsor.commercialbanner.form.button.return = Volver
+sponsor.commercialbanner.form.button.update = Actualizar
+sponsor.commercialbanner.form.button.create = Crear
+sponsor.commercialbanner.form.button.delete = Borrar
+
+error.spam = Error: spam

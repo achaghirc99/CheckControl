@@ -1,0 +1,19 @@
+#i18n_en.messages
+#
+#Design & Testing by group 70.
+#
+#
+
+administrator.register.list.label.name = Nombre
+administrator.register.list.label.sector = Sector
+administrator.register.list.label.investmentStatement = Declaracion de Inversion
+administrator.register.list.label.assessment = Valoracion 
+
+administrator.register.form.label.name  = Nombre:
+administrator.register.form.label.sector = Sector:
+administrator.register.form.label.investmentStatement = Declaracion de Inversion:
+administrator.register.form.label.assessment = Valoracion:
+administratorregister.form.button.return = Volver
+administrator.register.form.button.create = Crear
+administrator.register.form.button.update = Actualizar
+administrator.register.form.button.delete = Borrar

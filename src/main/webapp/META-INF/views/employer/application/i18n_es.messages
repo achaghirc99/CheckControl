@@ -1,0 +1,19 @@
+employer.employer.applications.list.label.referenceNumber =  Numero de Referencia 
+employer.employer.applications.list.label.moment = Momento
+employer.employer.applications.list.label.status = Estado
+
+
+employer.applications.form.label.referenceNumber = Numero de Referencia 
+employer.applications.form.label.moment= Momento
+employer.applications.form.label.status = Estado
+employer.applications.form.label.statement = Declaracion
+employer.applications.form.label.skills = Habilidades
+employer.applications.form.label.qualifications = Cualificaciones
+employer.applications.form.label.justification = Justificación
+employer.applications.form.button.return = Volver
+employer.applications.form.button.update = Actualizar
+employer.applications.form.label.status.accepted = Aceptar
+employer.applications.form.label.status.pending = Pendiente
+employer.applications.form.label.status.rejected = Declinar
+employer.job.application.update.error.justification.rejected = Si el status es declinar debes escribir una justificación.
+employer.job.application.update.error.justification = Solo las solicitudes declinadas deben tener una justificación.

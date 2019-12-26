@@ -1,0 +1,24 @@
+#i18n_en.messages
+#
+#
+# Copyrigth (C) Desing and Testing by group 70
+#
+#
+#
+
+#form.jsp
+authenticated.offer.form.label.ticker = Ticker
+authenticated.offer.form.label.title = Title 
+authenticated.offer.form.label.moment = Moment
+authenticated.offer.form.label.deadline = Deadline
+authenticated.offer.form.label.text = Text
+authenticated.offer.form.label.reward = Reward
+authenticated.offer.form.button.return = Return!
+#list.jsp
+authenticated.offer.list.label.ticker = Ticker
+authenticated.offer.list.label.title = Title 
+authenticated.offer.list.label.moment = Moment
+authenticated.offer.list.label.deadline = Deadline
+authenticated.offer.list.label.text = Text
+authenticated.offer.list.label.reward = Reward
+

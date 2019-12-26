@@ -1,0 +1,10 @@
+error.year = Error, credit card expirated
+
+authenticated.sponsor.form.label.organisationName = Organisation Name
+
+authenticated.sponsor.form.button.update-creditcard = Update Credit Card
+authenticated.sponsor.form.button.create-creditcard = Create Credit Card
+
+authenticated.sponsor.form.button.create = Register
+authenticated.sponsor.form.button.update = Update
+authenticated.sponsor.form.button.return = Return

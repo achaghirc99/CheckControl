@@ -1,0 +1,14 @@
+administrator.dashboard-list.form.totalNumberAnnouncement = Total Number Announcement
+administrator.dashboard-list.form.totalNumberInvestor = Total Number Investor
+administrator.dashboard-list.form.totalNumberCompany = Total Number Company
+administrator.dashboard-list.form.minimumRequest = Minimum Request
+administrator.dashboard-list.form.maximumRequest = Maximum Request
+administrator.dashboard-list.form.averageRequest = Average Request
+administrator.dashboard-list.form.desviationRequest = Desviation Request
+administrator.dashboard-list.form.minimumOffers = Minimum Offers
+administrator.dashboard-list.form.maximumOffers = Maximum Offers
+administrator.dashboard-list.form.averageOffers = Average Offers
+administrator.dashboard-list.form.desviationOffers = Desviation Offers
+administrator.dashboard-list.form.averageNumberOfJobsPerEmployer = Average Number of Jobs per Employer
+administrator.dashboard-list.form.averageNumberOfApplicationsPerWorker = Average Number of Applications per Worker
+administrator.dashboard-list.form.averageNumberOfApplicationsPerEmployer = Average Number of Applications per Employer

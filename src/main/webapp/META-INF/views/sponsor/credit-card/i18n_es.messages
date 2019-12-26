@@ -1,0 +1,12 @@
+error.year = Error, tarjeta de crédito caducada
+
+sponsor.creditcard.form.label.name = Nombre
+sponsor.creditcard.form.label.creditnumber = Número Tarjeta de Crédito
+sponsor.creditcard.form.label.cvc = CVC 
+sponsor.creditcard.form.label.month = Mes
+sponsor.creditcard.form.label.year = Año
+
+sponsor.form.button.create-creditcard = Crear
+sponsor.form.button.update-creditcard = Actualizar
+
+authenticated.sponsor.form.button.return = Volver

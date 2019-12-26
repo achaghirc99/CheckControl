@@ -1,0 +1,14 @@
+
+employer.duty.form.label.dutyTitle = Title
+employer.duty.form.label.description = Description
+employer.duty.form.label.percentage = Percentage
+
+employer.job.duty.list.label.dutyTitle = Title
+employer.job.duty.list.label.description = Description
+employer.job.duty.list.label.percentage = Percentage
+
+employer.job.duty.list.button.return = Return
+employer.job.form.button.update = Update
+employer.job.form.button.delete = Delete
+employer.job.duty.update.errors.percentage = Percentage must be between 0.0 and 100.0
+employer.job.duty.update.errors.total-percentage = The total percentage must be 100.00

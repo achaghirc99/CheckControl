@@ -1,0 +1,20 @@
+provider.requeststore.list.label.title = Title
+provider.requeststore.list.label.moment = Moment
+provider.requeststore.list.label.deadline = Deadline
+provider.requeststore.list.label.text = Text
+provider.requeststore.list.label.reward = Reward
+provider.requeststore.list.label.ticker = Ticker
+
+provider.requeststore.form.label.title = Title
+provider.requeststore.form.label.moment = Moment
+provider.requeststore.form.label.deadline = Deadline
+provider.requeststore.form.label.text = Text
+provider.requeststore.form.label.reward = Reward
+provider.requeststore.form.label.ticker = Ticker
+
+provider.requeststore.form.button.create = Create
+
+provider.requeststore.form.button.return = Return
+
+provider.requestStore.error.must-BeFuture = It must be in Future.
+provider.RequestStore.error.must-BeEur = It must be in EUR.

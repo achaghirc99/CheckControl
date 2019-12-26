@@ -1,0 +1,19 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.auditor.form.label.company = Compañia
+authenticated.auditor.form.label.responsibilityStatement = Declaración de responsabilidad
+
+authenticated.auditor.form.button.create = Crear
+authenticated.auditor.form.button.update = Actualizar
+authenticated.auditor.form.button.return = Volver
+
+authenticated.auditor.accepted = La solicitud no ha sido aceptada. Tienes que esperar a que el administrador la acepte
+authenticated.auditor.null = La solicitud debe ser creada. Tienes que enviar una solicitud para ser auditor en Solicitud de auditor > Crear solicitud de auditor y esperar a que el administrador la acepte

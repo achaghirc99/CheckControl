@@ -1,0 +1,11 @@
+error.year = Error, tarjeta de crédito caducada
+
+authenticated.sponsor.form.label.organisationName = Nombre Organización
+
+authenticated.sponsor.form.button.create-creditcard = Crear Tarjeta de Crédito
+authenticated.sponsor.form.button.update-creditcard = Actualizar Tarjeta de Crédito
+
+authenticated.sponsor.form.button.create = Registrar
+authenticated.sponsor.form.button.update = Actualizar
+authenticated.sponsor.form.button.return = Volver
+error.creditcard.year = ERROR AÑO

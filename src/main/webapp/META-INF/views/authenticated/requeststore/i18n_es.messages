@@ -1,0 +1,15 @@
+authenticated.requeststore.list.label.title = Titulo
+authenticated.requeststore.list.label.moment = Momento
+authenticated.requeststore.list.label.deadline = Fecha Limite
+authenticated.requeststore.list.label.text = Texto
+authenticated.requeststore.list.label.reward = Recompensa
+authenticated.requeststore.list.label.ticker = Ticker
+
+authenticated.requeststore.form.label.title = Titulo
+authenticated.requeststore.form.label.moment = Momento
+authenticated.requeststore.form.label.deadline = Fecha Limite
+authenticated.requeststore.form.label.text = Texto
+authenticated.requeststore.form.label.reward = Recompensa
+authenticated.requeststore.form.label.ticker = Ticker
+
+authenticated.requeststore.form.button.return = Volver

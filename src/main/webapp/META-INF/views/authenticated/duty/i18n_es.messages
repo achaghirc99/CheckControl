@@ -1,0 +1,10 @@
+employer.duty.form.label.dutyTitle = Titulo
+employer.duty.form.label.description = Descripcion
+employer.duty.form.label.percentage = Porcentage
+
+employer.job.duty.list.label.dutyTitle = Titulo
+employer.job.duty.list.label.description = Descripcion
+
+employer.job.duty.list.button.return = Volver
+
+error.spam = Error: spam

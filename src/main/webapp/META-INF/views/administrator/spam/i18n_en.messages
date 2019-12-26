@@ -1,0 +1,15 @@
+administrator.spam.form.label.spamWord = Spam words
+administrator.spam.form.label.threshold = Threshold
+
+administrator.spam.form.button.show = Show
+administrator.spam.form.button.update = Update
+administrator.spam.form.button.create = Create
+administrator.spam.form.button.return = Return
+administrator.spam.form.button.delete = Delete
+
+administrator.spam.list.label.spamWord = Spam words 
+administrator.spam.list.label.threshold = Threshold
+
+administrator.spam.error.empty = The spam word cannot be empty
+administrator.spam.error.negative = The threshold cannot be negative
+administrator.spam.error.higher = The threshold cannot be higher

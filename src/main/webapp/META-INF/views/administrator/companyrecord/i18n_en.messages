@@ -1,0 +1,24 @@
+administrator.companyrecord.list.label.name = Name
+administrator.companyrecord.list.label.sector = Sector
+administrator.companyrecord.list.label.ceo = CEO's name
+administrator.companyrecord.list.label.description = Description
+administrator.companyrecord.list.label.url = Website
+administrator.companyrecord.list.label.phone = Contact Phone
+administrator.companyrecord.list.label.email = Email
+administrator.companyrecord.list.label.evaluation = Evaluation 
+
+
+administrator.companyrecord.form.label.name = Name
+administrator.companyrecord.form.label.sector = Sector
+administrator.companyrecord.form.label.ceo = CEO's name
+administrator.companyrecord.form.label.description = Description
+administrator.companyrecord.form.label.url = Website
+administrator.companyrecord.form.label.phone = Contact Phone
+administrator.companyrecord.form.label.email = Email
+administrator.companyrecord.form.label.evaluation = Evaluation
+administrator.companyrecord.form.label.incorporated = Incorporated
+
+administrator.companyrecord.form.button.return = Return
+administrator.companyrecord.form.button.update = Update
+administrator.companyrecord.form.button.delete = Delete
+administrator.companyrecord.form.button.create = Create

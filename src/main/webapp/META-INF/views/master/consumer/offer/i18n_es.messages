@@ -1,0 +1,18 @@
+#form.jsp
+consumer.offer.form.label.ticker = Ticker
+consumer.offer.form.label.title = Titulo
+consumer.offer.form.label.moment = Momento
+consumer.offer.form.label.deadline = Fecha Limite
+consumer.offer.form.label.text = Texto
+consumer.offer.form.label.reward = Recompensa
+consumer.offer.form.button.return = Volver!
+consumer.offer.form.button.create = Crear
+consumer.offer.form.label.checkbox = Estás seguro?
+#list.jsp
+consumer.offer.list.label.ticker = Ticker
+consumer.offer.list.label.title = Titulo
+consumer.offer.list.label.moment = Momento
+
+consumer.offer.error.must-beCareful = No lo olvides! 
+consumer.offer.error.must-beFuture = Debe estar en futuro
+consumer.offer.error.must-beEUR = Debe estar en EUR

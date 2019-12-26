@@ -1,0 +1,30 @@
+authenticated.message-thread.list.label.title = Titulo
+authenticated.message-thread.list.label.moment = Momento
+authenticated.message-thread.list.label.users = Usuarios
+
+authenticated.message-thread.form.label.title = Titulo
+authenticated.message-thread.form.label.moment = Momento
+
+authenticated.message-thread.messages = <h4>Mensajes:</h4>
+authenticated.message.title = Titulo:
+authenticated.message.moment = Momento:
+authenticated.message.tags = Etiquetas:
+authenticated.message.body = Cuerpo:
+
+authenticated.message-thread.list.button.messages = Mensajes
+authenticated.message-thread.list.button.users = Usuarios
+
+authenticated.user-account.form.button.update = Actualizar
+authenticated.message-thread.form.button.create = Crear
+authenticated.message-thread.form.button.return = Volver
+authenticated.message-thread.list.button.message-create = Crear Mensaje
+
+authenticated.message-thread.add = <h4>Añadir Usuario</h4>
+authenticated.message-thread.delete = <h4>Borrar Usuario</h4>
+
+administrator.message-thread.form.label.user.username = Usuario
+
+authenticated.message-thread.exist = El usuario ya existe en este hilo de mensajes
+authenticated.message-thread.no-exist = El usuario no existe en este hilo de mensajes
+authenticated.message-thread.null = El usuario no existe
+authenticated.message-thread.sameName = El usuario no puede ser añadido y borrado a la vez

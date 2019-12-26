@@ -1,0 +1,20 @@
+#i18n_en.messages
+#
+#Design & Testing by group 70.
+#
+#
+
+
+
+authenticated.register.list.label.name = Name
+authenticated.register.list.label.sector = Sector
+authenticated.register.list.label.investmentStatement = Investment Statement
+authenticated.register.list.label.assessment = Assessment
+
+
+authenticated.register.form.label.name  = Name:
+authenticated.register.form.label.sector = Sector:
+authenticated.register.form.label.investmentStatement = Investment Statement:
+authenticated.register.form.label.assessment = Assessment: 
+authenticated.register.form.button.return = Return
+

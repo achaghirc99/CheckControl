@@ -1,0 +1,24 @@
+
+#Elementos del label de la lista
+authenticated.job.list.label.reference = Referencia
+authenticated.job.list.label.title = Titulo
+authenticated.job.list.label.deadline = Fecha limite
+
+#Elementos label del formulario
+authenticated.job.form.label.reference = Referencia
+authenticated.job.form.label.status = Estado
+authenticated.job.form.label.title = Titulo
+authenticated.job.form.label.deadline = Fecha limite
+authenticated.job.form.label.salary = Salario
+authenticated.job.form.label.moreInfo = Mas Informacion
+authenticated.job.form.label.description = Descripción
+
+authenticated.job.form.button.auditRecord = AuditRecords
+authenticated.job.form.button.return = Volver
+authenticated.job.form.button.descriptor = Descriptor
+authenticated.job.errors.must-BeFuture = Debe estar en futuro.
+
+authenticated.job.form.button.duty = Deberes
+worker.job.form.button = Crear Solicitud
+
+error.spam = Error: spam

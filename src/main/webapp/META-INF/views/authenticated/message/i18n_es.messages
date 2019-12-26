@@ -1,0 +1,16 @@
+authenticated.messages.list.label.title = Titulo
+authenticated.messages.list.label.moment = Momento
+
+authenticated.messages.form.label.title = Titulo
+authenticated.messages.form.label.moment = Momento
+authenticated.messages.form.label.tags = Etiquetas
+authenticated.messages.form.label.body = Cuerpo
+
+authenticated.messages.form.label.accepted = Aceptar este mensaje
+
+authenticated.message-thread.form.button.create = Crear
+authenticated.messages.form.button.return = Volver
+
+authenticated.messages.accepted = Debe ser aceptado
+
+error.spam = Error: spam
