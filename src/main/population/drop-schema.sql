@@ -7,6 +7,10 @@
        drop 
        foreign key FK_6lnbc6fo3om54vugoh8icg78m;
 
+    alter table `answer` 
+       drop 
+       foreign key `FKqiviwk3b1rfidhy9cajsblq37`;
+
     alter table `application` 
        drop 
        foreign key `FKoa6p4s2oyy7tf80xwc4r04vh6`;
@@ -58,6 +62,10 @@
     alter table `job` 
        drop 
        foreign key `FK3rxjf8uh6fh2u990pe8i2at0e`;
+
+    alter table `jobchallenge` 
+       drop 
+       foreign key `FK2ba5sve1u6cxenx14cbyjq49a`;
 
     alter table `message` 
        drop 
@@ -121,6 +129,8 @@
 
     drop table if exists `anonymous`;
 
+    drop table if exists `answer`;
+
     drop table if exists `application`;
 
     drop table if exists `auditor`;
@@ -150,6 +160,8 @@
     drop table if exists `frias_bulletin`;
 
     drop table if exists `job`;
+
+    drop table if exists `jobchallenge`;
 
     drop table if exists `message`;
 

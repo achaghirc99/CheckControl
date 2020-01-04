@@ -17,3 +17,6 @@ employer.applications.form.label.status.pending = Pendiente
 employer.applications.form.label.status.rejected = Declinar
 employer.job.application.update.error.justification.rejected = Si el status es declinar debes escribir una justificación.
 employer.job.application.update.error.justification = Solo las solicitudes declinadas deben tener una justificación.
+
+employer.applications.form.label.answer = Respuesta
+employer.applications.form.label.answer.optional = Opcional de la respuesta

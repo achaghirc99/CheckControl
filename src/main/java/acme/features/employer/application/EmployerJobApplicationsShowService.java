@@ -46,8 +46,25 @@ public class EmployerJobApplicationsShowService implements AbstractShowService<E
 
 		request.unbind(entity, model, "referenceNumber", "moment", "status", "statement", "skills", "qualifications", "justification");
 		model.setAttribute("idApp", entity.getId());
-	}
+		boolean haveAnswer = entity.getAnswer() != null;
+		model.setAttribute("haveAnswer", haveAnswer);
+		boolean havePassword = entity.getPassword() != null && entity.getJob().getPassword() != null;
+		model.setAttribute("havePassword", havePassword);
+		if (entity.getPassword() != null) {
+			model.setAttribute("password", "[MASKED-PROTECTED]");
+		}
 
+		if (haveAnswer) {
+			boolean haveOptional = entity.getAnswer().getOptional() != null;
+			model.setAttribute("haveOptional", haveOptional);
+			if (havePassword) {
+				boolean checkPassword = entity.getPassword().equals(entity.getJob().getPassword());
+				if (checkPassword) {
+					request.unbind(entity, model, "answer.answer", "answer.optional");
+				}
+			}
+		}
+	}
 	@Override
 	public Application findOne(final Request<Application> request) {
 		assert request != null;

@@ -3,6 +3,77 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
+
+	<div class="form-group">
+		<h3 align="center">
+			<acme:message code="administrator.dashboard.title.ratiosCheckControl"/>
+		</h3>
+	</div>
+	<br>
+	<div>
+		<canvas id="canvas0"></canvas>
+	</div>
+	<br>
+	<script type="text/javascript" >
+		$(document).ready(function(){
+			var data = {
+					labels : [
+						"Jobs With Challenge","Challenge with MoreInfo","Applications with password-protected Jobs"
+					],
+					datasets : [
+						{
+						
+							data : [
+								<jstl:out value="${ratiosOfCheckControl[0]}"/>,
+								<jstl:out value="${ratiosOfCheckControl[1]}"/>,
+								<jstl:out value="${ratiosOfCheckControl[2]}"/>
+							],backgroundColor: [
+								<jstl:forEach var="ratiosOfCheckControl[0]" items="${ratiosOfCheckControl[0]}">
+								<jstl:out value="'#63FFFB'" escapeXml="false"/>,
+								</jstl:forEach>
+								<jstl:forEach var="ratiosOfCheckControl[1]" items="${ratiosOfCheckControl[1]}">
+								<jstl:out value="'#7AE44C'" escapeXml="false"/>,
+								</jstl:forEach>
+								<jstl:forEach var="ratiosOfCheckControl[2]" items="${ratiosOfCheckControl[2]}">
+								<jstl:out value="'#FB0101'" escapeXml="false"/>,
+								</jstl:forEach>
+								
+							]
+						}
+					]
+			
+				};
+				var options = {
+					scales : {
+						yAxes : [
+							{
+								ticks : {
+									suggestedMin : 0.0,
+									suggestedMax : 1.0
+								}
+							}
+						]
+					},
+					legend : {
+						display : false
+					}
+				};
+	
+		var canvas, context;
+	
+			canvas = document.getElementById("canvas0");
+			context = canvas.getContext("2d");
+		new Chart(context, {
+		
+			type : "bar",
+			data : data,
+			options : options
+		});
+	});
+	</script>
+	
+
+
 <h2 align="center">
 	<acme:message code="administrator.dashboard.title.application-statuses"/>
 </h2>

@@ -27,6 +27,12 @@
 		<jstl:if test="${status == 'REJECTED' }">
 			<acme:form-textarea code="employer.applications.form.label.justification" path="justification"/>
 		</jstl:if>
+	<jstl:if test="${haveAnswer == true and havePassword == true}">
+	<acme:form-textarea code="employer.applications.form.label.answer" path="answer.answer"/>
+		<jstl:if test="${haveOptional == true }">
+			<acme:form-textarea code="employer.applications.form.label.answer.optional" path="answer.optional"/>	
+		</jstl:if>
+	</jstl:if>
 	<acme:form-submit code="employer.applications.form.button.update" method="get" action="/employer/application/update?id=${idApp}"/>
 	</jstl:if>
 	<jstl:if test="${command == 'update'}">

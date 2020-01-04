@@ -60,6 +60,19 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 			int IdDescriptor = entity.getDescriptor().getId();
 			model.setAttribute("idDescriptor", IdDescriptor);
 		}
+		boolean haveChallenge = entity.getChallenge() != null;
+		model.setAttribute("haveChallenge", haveChallenge);
+		if (haveChallenge) {
+			if (entity.getChallenge().getText() != null || entity.getChallenge().getMoreInfo() != "") {
+				boolean haveTextChallenge = entity.getChallenge().getText() != null || entity.getChallenge().getText() != "";
+				model.setAttribute("textChallenge", haveTextChallenge);
+				request.unbind(entity, model, "challenge.text", "challenge.moreInfo");
+			}
+			if (entity.getChallenge().getMoreInfo() != null) {
+				boolean haveMoreInfoChallenge = entity.getChallenge().getMoreInfo() != null;
+				model.setAttribute("moreInfoChallenge", haveMoreInfoChallenge);
+			}
+		}
 		/**
 		 * Con el fin de mostrar la opcion de actualizar solo para aquellos trabajos que esten en finalMode == true, se aplica en form.jsp
 		 */

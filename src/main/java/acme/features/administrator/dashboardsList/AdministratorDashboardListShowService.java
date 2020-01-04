@@ -44,7 +44,9 @@ public class AdministratorDashboardListShowService implements AbstractShowServic
 		Double averageNumberOfJobsPerEmployer = this.repository.averageNumberOfJobsPerEmployer();
 		Double averageNumberOfApplicationsPerWorker = this.repository.averageNumberOfApplicationsPerWorker();
 		Double averageNumberOfApplicationsPerEmployer = this.repository.averageNumberOfApplicationsPerEmployer();
-
+		Double ratioOfJobsWithChallenge = this.repository.getRatioJobsWithChallenge();
+		Double ratioChallengeWithMoreInfo = this.repository.getRatioChallengeWithMoreInfo();
+		Double ratioOfApplicationsWithPasworedJob = this.repository.getRatioOfApplicationsWithPasworedXXX();
 		request.unbind(entity, model);
 
 		model.setAttribute("totalNumberAnnouncement", totalNumberAnnouncement);
@@ -61,7 +63,9 @@ public class AdministratorDashboardListShowService implements AbstractShowServic
 		model.setAttribute("averageNumberOfJobsPerEmployer", averageNumberOfJobsPerEmployer);
 		model.setAttribute("averageNumberOfApplicationsPerWorker", averageNumberOfApplicationsPerWorker);
 		model.setAttribute("averageNumberOfApplicationsPerEmployer", averageNumberOfApplicationsPerEmployer);
-
+		model.setAttribute("ratioOfJobsWithChallenge", ratioOfJobsWithChallenge);
+		model.setAttribute("ratioChallengeWithMoreInfo", ratioChallengeWithMoreInfo);
+		model.setAttribute("ratioOfApplicationsWithPasworedJob", ratioOfApplicationsWithPasworedJob);
 	}
 
 	@Override

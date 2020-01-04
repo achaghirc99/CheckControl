@@ -1,0 +1,5 @@
+worker.applications.form.label.answer.answer = Answer 
+worker.applications.form.label.answer.optional = Optional Answer
+	
+worker.applications.form.button.createAnswer = Create	
+worker.applications.form.button.return = Return

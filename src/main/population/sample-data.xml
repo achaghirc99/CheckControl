@@ -1059,6 +1059,39 @@
 		</property>
 	</bean>
 
+	<!-- JobChallenge -->
+
+	<bean id="jobChallenge1" class="acme.entities.jobchallenges.Jobchallenge">
+	<property name="text" value="Este es el primer ejemplo de un reto de un trabajo"/>
+	<property name="moreInfo" value="http://www.example.com"/>
+	<property name="job" ref="job1"/>	
+	</bean>
+	
+	<bean id="jobChallenge2" class="acme.entities.jobchallenges.Jobchallenge">
+	<property name="text" value="Este es el segundo ejemplo de un reto de un trabajo"/>
+	<property name="moreInfo"><null/></property>
+	<property name="job" ref="job2"/>	
+	</bean>
+	
+	<bean id="jobChallenge3" class="acme.entities.jobchallenges.Jobchallenge">
+	<property name="text" value="Este es el tercer ejemplo de un reto de un trabajo"/>
+	<property name="moreInfo"><null/></property>
+	<property name="job" ref="job3"/>	
+	</bean>
+	
+	<bean id="jobChallenge4" class="acme.entities.jobchallenges.Jobchallenge">
+	<property name="text" value="Este es el cuarto ejemplo de un reto de un trabajo"/>
+	<property name="moreInfo"><null/></property>
+	<property name="job" ref="job4"/>		
+	</bean>
+
+	<bean id="jobChallenge5" class="acme.entities.jobchallenges.Jobchallenge">
+	<property name="text" value="Este es el quinto ejemplo de un reto de un trabajo"/>
+	<property name="moreInfo" value="http://www.example.com"/>
+	<property name="job" ref="job5"/>		
+	</bean>
+	
+
 	<!-- Jobs -->
 	
 	<bean id="job1"  class="acme.entities.jobs.Job">
@@ -1069,7 +1102,9 @@
 		<property name="deadline" value="2030/11/12 18:00"/>
 		<property name="salary" value="€ 15,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="password"><null/></property>
 		<property name="descriptor" ref="descriptor01"/>
+		<property name="challenge" ref="jobChallenge1"/>
 		<property name="finalMode" value="false"/>
 		<property name="employer" ref="employer1Employer"/>
 		<property name="application">
@@ -1095,7 +1130,9 @@
 		<property name="deadline" value="2020/11/12 23:59"/>
 		<property name="salary" value="$ 20,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="password" value="Contraseña123@"/>
 		<property name="descriptor" ref="descriptor02"/>
+		<property name="challenge" ref="jobChallenge2"/>
 		<property name="finalMode" value="true"/>
 		<property name="employer" ref="employer1Employer"/>
 		<property name="application">
@@ -1121,7 +1158,9 @@
 		<property name="deadline" value="2030/11/12 23:59"/>
 		<property name="salary" value="€ 24,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="password"><null/></property>
 		<property name="descriptor" ref="descriptor03"/>
+		<property name="challenge" ref="jobChallenge3"/>
 		<property name="finalMode" value="true"/>
 		<property name="employer" ref="employer2Employer"/>
 		<property name="application">
@@ -1146,7 +1185,9 @@
 		<property name="deadline" value="2030/11/12 23:59"/>
 		<property name="salary" value="€ 24,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="password" value="Contraseña123@"/>
 		<property name="descriptor" ref="descriptor04"/>
+		<property name="challenge" ref="jobChallenge4"/>
 		<property name="finalMode" value="false"/>
 		<property name="employer" ref="employer2Employer"/>
 		<property name="application">
@@ -1171,7 +1212,9 @@
 		<property name="deadline" value="2020/11/12 23:59"/>
 		<property name="salary" value="€ 24,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="password"><null/></property>
 		<property name="descriptor" ref="descriptor05"/>
+		<property name="challenge" ref="jobChallenge5"/>
 		<property name="finalMode" value="true"/>
 		<property name="employer" ref="employer2Employer"/>
 		<property name="application">
@@ -1191,13 +1234,15 @@
 		<bean id="job6"  class="acme.entities.jobs.Job">
 		<property name="reference" value="EMP1-JOB3"/>
 		<property name="title" value="Job 6"/>
-		<property name="status" value="PUBLISHED"/>
+		<property name="status" value="DRAFTED"/>
 		<property name="description" value="This is the third job of the first employer"/>
 		<property name="deadline" value="2020/11/12 23:59"/>
 		<property name="salary" value="€ 12,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="descriptor" ref="descriptor06"/>
-		<property name="finalMode" value="true"/>
+		<property name="password" value="Contraseña123@"/>
+		<property name="challenge"><null/></property>
+		<property name="finalMode" value="false"/>
 		<property name="employer" ref="employer1Employer"/>
 		<property name="application">
 			<list>
@@ -1213,6 +1258,43 @@
         </property>
 	</bean>
 	
+	<!-- ANSWERS -->
+	<bean id="answer1" class="acme.entities.answers.Answer">
+		<property name="answer" value="This is the first answer"/>
+		<property name="optional" value="this is an optional"/>
+		<property name="application" ref="Application1"/>
+	</bean>
+	
+	<bean id="answer2" class="acme.entities.answers.Answer">
+		<property name="answer" value="This is the second answer"/>
+		<property name="optional" value="this is an optional"/>
+		<property name="application" ref="Application2"/>
+	</bean>
+	
+	<bean id="answer3" class="acme.entities.answers.Answer">
+		<property name="answer" value="This is the third answer"/>
+		<property name="optional" value="this is an optional"/>
+		<property name="application" ref="Application3"/>
+	</bean>
+	
+	<bean id="answer4" class="acme.entities.answers.Answer">
+		<property name="answer" value="This is the fourth answer"/>
+		<property name="optional" value="this is an optional"/>
+		<property name="application" ref="Application4"/>
+	</bean>
+	
+	<bean id="answer5" class="acme.entities.answers.Answer">
+		<property name="answer" value="This is the fifth answer"/>
+		<property name="optional" value="this is an optional"/>
+		<property name="application" ref="Application5"/>
+	</bean>
+	
+	<bean id="answer6" class="acme.entities.answers.Answer">
+		<property name="answer" value="This is the sixth answer"/>
+		<property name="optional" value="this is an optional"/>
+		<property name="application" ref="Application6"/>
+	</bean>
+	
 	<!-- Workerapplications -->
 	
 	<bean name= "Application1" class= "acme.entities.applications.Application">
@@ -1223,7 +1305,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
-		<property name="worker" ref="worker1Worker" />
+		<property name="password" ><null/></property>
+		<property name="answer" ref="answer1"/>
+		<property name="worker" ref="worker1Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
 	
@@ -1235,6 +1319,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
+		<property name="password" ><null/></property>
+		<property name="answer" ref="answer2"/>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -1246,6 +1332,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value="Sorry you don't have the qualifications that we need in our company"/>
+		<property name="answer" ref="answer3"/>
+		<property name="password" value="Contraseña123@"/>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job2"/>
 	</bean>
@@ -1259,6 +1347,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
+		<property name="password" value="Contraseña123@"/>
+		<property name="answer" ref="answer4"/>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job2"/>
 	</bean>
@@ -1271,6 +1361,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and PHP developer" />
 		<property name="justification" value=""/>
+		<property name="password" value="Contraseña123@"/>
+		<property name="answer" ref="answer5"/>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job6"/>
 	</bean>
@@ -1283,6 +1375,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value="Sorry you don't have the qualifications that we need in our company"/>
+		<property name="answer" ref="answer6"/>
+		<property name="password" ><null/></property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job6"/>
 	</bean>
@@ -1294,6 +1388,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and PHP developer" />
 		<property name="justification" value=""/>
+		<property name="password" value="Contraseña123@"/>
+		<property name="answer"><null/></property>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job4"/>
 	</bean>
@@ -1306,6 +1402,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
+		<property name="password" ><null/></property>
+		<property name="answer"><null/></property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job4"/>
 	</bean>
@@ -1317,6 +1415,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and PHP developer" />
 		<property name="justification" value=""/>
+		<property name="password" ><null/></property>
+		<property name="answer"><null/></property>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job5"/>
 	</bean>
@@ -1329,6 +1429,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
+		<property name="password" ><null/></property>
+		<property name="answer"><null/></property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job5"/>
 	</bean>
@@ -1342,6 +1444,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and PHP developer" />
 		<property name="justification" value=""/>
+		<property name="password" ><null/></property>
+		<property name="answer"><null/></property>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job3"/>
 	</bean>
@@ -1354,6 +1458,8 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
+		<property name="password" ><null/></property>
+		<property name="answer"><null/></property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job3"/>
 	</bean>

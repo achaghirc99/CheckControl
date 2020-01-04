@@ -23,11 +23,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `answer` (
+       `id` integer not null,
+        `version` integer not null,
+        `answer` varchar(255),
+        `optional` varchar(255),
+        `application_id` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `application` (
        `id` integer not null,
         `version` integer not null,
         `justification` varchar(255),
         `moment` datetime(6),
+        `password` varchar(255),
         `qualifications` varchar(255),
         `reference_number` varchar(255),
         `skills` varchar(255),
@@ -184,6 +194,7 @@
         `description` varchar(255),
         `final_mode` bit not null,
         `more_info` varchar(255),
+        `password` varchar(255),
         `reference` varchar(255),
         `salary_amount` double precision,
         `salary_currency` varchar(255),
@@ -191,6 +202,15 @@
         `title` varchar(255),
         `descriptor_id` integer,
         `employer_id` integer not null,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `jobchallenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `more_info` varchar(255),
+        `text` varchar(255),
+        `job_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -413,6 +433,11 @@ create index IDX7mpr4u7oxcyr0nrl5osmj05uh on `requeststore` (`ticker`);
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
+    alter table `answer` 
+       add constraint `FKqiviwk3b1rfidhy9cajsblq37` 
+       foreign key (`application_id`) 
+       references `application` (`id`);
+
     alter table `application` 
        add constraint `FKoa6p4s2oyy7tf80xwc4r04vh6` 
        foreign key (`job_id`) 
@@ -477,6 +502,11 @@ create index IDX7mpr4u7oxcyr0nrl5osmj05uh on `requeststore` (`ticker`);
        add constraint `FK3rxjf8uh6fh2u990pe8i2at0e` 
        foreign key (`employer_id`) 
        references `employer` (`id`);
+
+    alter table `jobchallenge` 
+       add constraint `FK2ba5sve1u6cxenx14cbyjq49a` 
+       foreign key (`job_id`) 
+       references `job` (`id`);
 
     alter table `message` 
        add constraint `FKn5adlx3oqjna7aupm8gwg3fuj` 

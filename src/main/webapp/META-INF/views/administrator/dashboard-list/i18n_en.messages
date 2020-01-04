@@ -12,3 +12,6 @@ administrator.dashboard-list.form.desviationOffers = Desviation Offers
 administrator.dashboard-list.form.averageNumberOfJobsPerEmployer = Average Number of Jobs per Employer
 administrator.dashboard-list.form.averageNumberOfApplicationsPerWorker = Average Number of Applications per Worker
 administrator.dashboard-list.form.averageNumberOfApplicationsPerEmployer = Average Number of Applications per Employer
+administrator.dashboard-list.form.ratioOfJobsWithChallenge = Jobs With Challenge
+administrator.dashboard-list.form.ratioChallengeWithMoreInfo = Challenge with MoreInfo
+administrator.dashboard-list.form.ratioOfApplicationsWithPasworedJob = Applications with password-protected Jobs

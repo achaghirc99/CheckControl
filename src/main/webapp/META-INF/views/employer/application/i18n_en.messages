@@ -16,3 +16,6 @@ employer.applications.form.label.status.pending = Pending
 employer.applications.form.label.status.rejected = Rejected
 employer.job.application.update.error.justification.rejected = If status is rejected you must provide a justification.
 employer.job.application.update.error.justification = Only rejected applications need a justification.
+
+employer.applications.form.label.answer = Answer
+employer.applications.form.label.answer.optional = Answer Optional

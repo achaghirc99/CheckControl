@@ -24,6 +24,7 @@ import org.hibernate.validator.constraints.URL;
 
 import acme.entities.applications.Application;
 import acme.entities.auditRecords.Auditrecord;
+import acme.entities.jobchallenges.Jobchallenge;
 import acme.entities.roles.Employer;
 import acme.entities.spams.Spamlist;
 import acme.framework.datatypes.Money;
@@ -67,10 +68,20 @@ public class Job extends DomainEntity {
 	@URL
 	private String					moreInfo;
 
+	/**
+	 * La contraseña con la debe coincidir la contraseña de la application que
+	 * manda el worker para que se muestren las answer
+	 */
+	private String					password;
+
 	@NotNull
 	private boolean					finalMode;
 
 	//Relationships ----------------------------------------------------------------------------------------
+
+	@Valid
+	@OneToOne(mappedBy = "job")
+	private Jobchallenge			challenge;
 
 	@Valid
 	@ManyToOne(optional = false)

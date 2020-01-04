@@ -49,4 +49,12 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select a.moment, count(a) from Application a where a.status = acme.entities.applications.ApplicationStatus.REJECTED and a.moment >= ?1 group by a.moment")
 	List<String[]> getRejectedApplicationsPerDayLastFourWeeks(Date minimumdate);
 
+	@Query("select 1.0*count(j) / (select count(a) from Job a) from Jobchallenge j where j.job.id is not null")
+	Double getRatioJobsWithChallenge();
+
+	@Query("select 1.0 * count(c) / (select count(b) from Jobchallenge b) from Jobchallenge c where c.moreInfo is not null")
+	Double getRatioChallengeWithMoreInfo();
+
+	@Query("select 1.0 * count(a) / (select count(c) from Application c) from Application a where a.job.password is not null")
+	Double getRatioOfApplicationsWithPasworedXXX();
 }

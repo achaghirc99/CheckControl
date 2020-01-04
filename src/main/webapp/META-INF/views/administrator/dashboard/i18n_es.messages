@@ -1,3 +1,7 @@
 administrator.dashboard.title.application-statuses = COMPANIAS E INVERSORES
 administrator.dashboard.title.jobsByStatus = TRABAJOS POR ESTADO
 administrator.dashboard.title.applicationsByStatus = SOLICITUDES POR ESTADO
+administrator.dashboard.title.ratiosCheckControl = Porcentajes para el checkControl
+administrator.dashboard-list.form.ratioOfJobsWithChallenge = Trabajos con Reto
+administrator.dashboard-list.form.ratioChallengeWithMoreInfo = Restos con link de Mas Informacion
+administrator.dashboard-list.form.ratioOfApplicationsWithPasworedJob = Solicitudes con Trabajos protegidos con contraseña

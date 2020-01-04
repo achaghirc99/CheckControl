@@ -27,4 +27,6 @@ public class Dashboard extends DomainEntity {
 	List<Integer>				numberAcceptedApplications;//Accepted applications per day the last four weeks
 	List<Integer>				numberRejectedApplications;//Rejected applications per day the last four weeks
 
+	String[]					ratiosOfCheckControl;
+
 }

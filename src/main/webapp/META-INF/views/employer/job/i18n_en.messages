@@ -13,10 +13,12 @@ employer.job.form.label.salary = Salary
 employer.job.form.label.moreInfo = More Info
 employer.job.form.label.description = Description
 employer.job.form.label.descriptor.description = Descriptor description
+employer.job.form.label.challenge.text = Text
+employer.job.form.label.challenge.moreInfo = More Info
 employer.job.form.label.finalMode = final version?
 
 employer.job.form.label.duty.title = Duty title
-
+employer.job.form.button.job.createChallenge = Create Challenge
 employer.job.form.button.auditRecord = AuditRecords
 employer.job.form.button.return = Return
 employer.job.form.button.duties = Duties

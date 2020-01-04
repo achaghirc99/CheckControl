@@ -69,7 +69,7 @@ public class WorkerapplicationsCreateService implements AbstractCreateService<Wo
 		int jobId = request.getModel().getInteger("jobId");
 		model.setAttribute("jobId", jobId);
 
-		request.unbind(entity, model, "referenceNumber", "status", "statement", "skills", "qualifications");
+		request.unbind(entity, model, "referenceNumber", "status", "statement", "skills", "qualifications", "password");
 	}
 
 	@Override
@@ -106,6 +106,28 @@ public class WorkerapplicationsCreateService implements AbstractCreateService<Wo
 		errors.state(request, entity.spam(list, entity.getSkills()), "skills", "error.spam");
 		errors.state(request, entity.spam(list, entity.getQualifications()), "qualifications", "error.spam");
 
+		boolean checkPassword = this.isValidPassword(entity.getPassword());
+		errors.state(request, checkPassword, "password", "error.password");
+
+	}
+
+	private Boolean isValidPassword(final String password) {
+		Boolean res = false;
+		int numberDigits = 0, numberLetters = 0, numberSimbols = 0;
+		char c;
+		for (int i = 0; i < password.length(); i++) {
+			c = password.charAt(i);
+			String charToString = String.valueOf(c);
+			if (charToString.matches("[a-zA-ZÑñ ]")) {
+				numberLetters++;
+			} else if (charToString.matches("\\d")) {
+				numberDigits++;
+			} else {
+				numberSimbols++;
+			}
+		}
+		res = numberLetters >= 5 && numberDigits >= 3 && numberSimbols >= 1;
+		return res;
 	}
 
 	@Override

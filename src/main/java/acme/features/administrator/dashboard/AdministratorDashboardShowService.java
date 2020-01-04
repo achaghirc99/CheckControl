@@ -52,7 +52,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		model.setAttribute("days", stringDates);
 
 		request.unbind(entity, model, "labels", "numberCompanies", "numberRegisters", "ratioJobsByStatus", "ratioApplicationsByStatus");
-		request.unbind(entity, model, "numberPendingApplications", "numberAcceptedApplications", "numberRejectedApplications");
+		request.unbind(entity, model, "numberPendingApplications", "numberAcceptedApplications", "numberRejectedApplications", "ratiosOfCheckControl");
 
 	}
 
@@ -132,6 +132,16 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		dashboard.setNumberAcceptedApplications(this.getDataByDate(acceptedApplicationsList, dates));
 		dashboard.setNumberRejectedApplications(this.getDataByDate(rejectedApplicationsList, dates));
 		//---------------------------------------END------------------------------------------------------------------------------------------
+
+		//--------------------------------CHECK CONTROL---------------------------------------------------------------------------------------
+		Double ratioOfJobsWithChallenge = this.repository.getRatioJobsWithChallenge();
+		Double ratioChallengeWithMoreInfo = this.repository.getRatioChallengeWithMoreInfo();
+		Double ratioOfApplicationsWithPasworedXXX = this.repository.getRatioOfApplicationsWithPasworedXXX();
+		String[] ratios = new String[3];
+		ratios[0] = ratioOfJobsWithChallenge.toString();
+		ratios[1] = ratioChallengeWithMoreInfo.toString();
+		ratios[2] = ratioOfApplicationsWithPasworedXXX.toString();
+		dashboard.setRatiosOfCheckControl(ratios);
 
 		return dashboard;
 

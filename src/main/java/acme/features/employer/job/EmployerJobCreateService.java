@@ -39,7 +39,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "descriptor");
+		request.bind(entity, errors, "descriptor", "challenge");
 
 	}
 
@@ -130,6 +130,11 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 			entity.setDescriptor(newDescriptor);
 			this.repository.save(newDescriptor);
 
+		}
+
+		String textChallenge = request.getModel().getString("challenge.text");
+		if (textChallenge == "" || textChallenge == null) {
+			entity.setChallenge(null);
 		}
 
 		boolean finalMode = request.getModel().getBoolean("finalMode");
