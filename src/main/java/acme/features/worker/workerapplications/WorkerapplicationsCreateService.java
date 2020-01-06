@@ -115,32 +115,13 @@ public class WorkerapplicationsCreateService implements AbstractCreateService<Wo
 		//		boolean checkPassword = this.isValidPassword(entity.getXxx4().getPassword());
 		//		errors.state(request, checkPassword, "password", "error.password");
 		if (entity.getJob().getChallenge().getXxx4() != null) {
-			if (entity.getXxx4().getPassword() != null && entity.getJob().getChallenge().getXxx4().getPassword() != null && entity.getJob().getChallenge().getXxx4() != null) {
+			if (entity.getXxx4().getPassword() != null && entity.getJob().getChallenge().getXxx4() != null) {
 				String applicationpassword = entity.getXxx4().getPassword();
 				String challengexxx4Pass = entity.getJob().getChallenge().getXxx4().getPassword();
 				boolean checkPass = applicationpassword.equals(challengexxx4Pass);
 				errors.state(request, checkPass, "xxx4.password", "error.password.notequals");
 			}
 		}
-	}
-
-	private Boolean isValidPassword(final String password) {
-		Boolean res = false;
-		int numberDigits = 0, numberLetters = 0, numberSimbols = 0;
-		char c;
-		for (int i = 0; i < password.length(); i++) {
-			c = password.charAt(i);
-			String charToString = String.valueOf(c);
-			if (charToString.matches("[a-zA-ZÑñ ]")) {
-				numberLetters++;
-			} else if (charToString.matches("\\d")) {
-				numberDigits++;
-			} else {
-				numberSimbols++;
-			}
-		}
-		res = numberLetters >= 5 && numberDigits >= 3 && numberSimbols >= 1;
-		return res;
 	}
 
 	@Override

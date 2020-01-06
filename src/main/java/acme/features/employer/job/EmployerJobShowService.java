@@ -66,11 +66,12 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 			if (entity.getChallenge().getText() != null || entity.getChallenge().getMoreInfo() != "") {
 				boolean haveTextChallenge = entity.getChallenge().getText() != null || entity.getChallenge().getText() != "";
 				model.setAttribute("textChallenge", haveTextChallenge);
-				request.unbind(entity, model, "challenge.text", "challenge.moreInfo");
+				request.unbind(entity, model, "challenge.text");
 			}
 			if (entity.getChallenge().getMoreInfo() != null) {
 				boolean haveMoreInfoChallenge = entity.getChallenge().getMoreInfo() != null;
 				model.setAttribute("moreInfoChallenge", haveMoreInfoChallenge);
+				request.unbind(entity, model, "challenge.moreInfo");
 			}
 		}
 		/**

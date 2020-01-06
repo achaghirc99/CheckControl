@@ -32,11 +32,11 @@ public class Jobchallenge extends DomainEntity {
 	private String				moreInfo;
 
 	@Valid
-	@OneToOne(optional = true)
+	@OneToOne()
 	private Job					job;
 
 	@Valid
-	@OneToOne()
+	@OneToOne(optional = true)
 	private XXX4				xxx4;
 
 }
