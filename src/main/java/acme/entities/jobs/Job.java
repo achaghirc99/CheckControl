@@ -68,12 +68,6 @@ public class Job extends DomainEntity {
 	@URL
 	private String					moreInfo;
 
-	/**
-	 * La contraseña con la debe coincidir la contraseña de la application que
-	 * manda el worker para que se muestren las answer
-	 */
-	private String					password;
-
 	@NotNull
 	private boolean					finalMode;
 

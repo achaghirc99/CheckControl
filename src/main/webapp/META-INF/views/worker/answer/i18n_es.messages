@@ -1,5 +1,0 @@
-worker.applications.form.label.answer.answer = Respuesta
-worker.applications.form.label.answer.optional = Opcional de la Respuesta 
-
-worker.applications.form.button.createAnswer = Create
-worker.applications.form.button.return = Volver

@@ -72,9 +72,10 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		if (entity.getChallenge() != null) {
 			model.setAttribute("textChallenge", entity.getChallenge().getText());
 			request.unbind(entity, model, "challenge.text", "challenge.moreInfo");
-		}
-		if (entity.getChallenge().getMoreInfo() != "" || entity.getChallenge().getMoreInfo() != null) {
-			model.setAttribute("moreInfoChallenge", entity.getChallenge().getMoreInfo());
+
+			if (entity.getChallenge().getMoreInfo() != "" || entity.getChallenge().getMoreInfo() != null) {
+				model.setAttribute("moreInfoChallenge", entity.getChallenge().getMoreInfo());
+			}
 		}
 	}
 

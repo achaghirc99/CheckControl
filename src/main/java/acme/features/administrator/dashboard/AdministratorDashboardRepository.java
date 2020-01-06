@@ -52,9 +52,9 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select 1.0*count(j) / (select count(a) from Job a) from Jobchallenge j where j.job.id is not null")
 	Double getRatioJobsWithChallenge();
 
-	@Query("select 1.0 * count(c) / (select count(b) from Jobchallenge b) from Jobchallenge c where c.moreInfo is not null")
-	Double getRatioChallengeWithMoreInfo();
+	@Query("select 1.0 * count(c) / (select count(b) from Jobchallenge b) from Jobchallenge c where c.xxx4 is not null")
+	Double getRatioChallengeWithXxx4();
 
-	@Query("select 1.0 * count(a) / (select count(c) from Application c) from Application a where a.job.password is not null")
+	@Query("select 1.0 * count(a) / (select count(c) from Application c) from Application a where a.xxx4.password is not null")
 	Double getRatioOfApplicationsWithPasworedXXX();
 }

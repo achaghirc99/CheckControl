@@ -48,20 +48,23 @@ public class EmployerJobApplicationsShowService implements AbstractShowService<E
 		model.setAttribute("idApp", entity.getId());
 		boolean haveAnswer = entity.getAnswer() != null;
 		model.setAttribute("haveAnswer", haveAnswer);
-		boolean havePassword = entity.getPassword() != null && entity.getJob().getPassword() != null;
-		model.setAttribute("havePassword", havePassword);
-		if (entity.getPassword() != null) {
-			model.setAttribute("password", "[MASKED-PROTECTED]");
+		boolean haveXxx4 = entity.getXxx4() != null && entity.getJob().getChallenge().getXxx4() != null;
+		model.setAttribute("haveXxx4", haveXxx4);
+		boolean havePassword = false;
+		if (entity.getXxx4() != null) {
+			havePassword = entity.getXxx4().getPassword() != null && entity.getJob().getChallenge().getXxx4() != null;
+			model.setAttribute("havePassword", havePassword);
 		}
-
 		if (haveAnswer) {
-			boolean haveOptional = entity.getAnswer().getOptional() != null;
-			model.setAttribute("haveOptional", haveOptional);
 			if (havePassword) {
-				boolean checkPassword = entity.getPassword().equals(entity.getJob().getPassword());
+				request.unbind(entity, model, "xxx4.password");
+				model.setAttribute("password", "[MASKED-PROTECTED]");
+				boolean checkPassword = entity.getXxx4().getPassword().equals(entity.getJob().getChallenge().getXxx4().getPassword());
 				if (checkPassword) {
-					request.unbind(entity, model, "answer.answer", "answer.optional");
+					request.unbind(entity, model, "answer");
 				}
+			} else if (haveAnswer && !havePassword) {
+				request.unbind(entity, model, "answer");
 			}
 		}
 	}

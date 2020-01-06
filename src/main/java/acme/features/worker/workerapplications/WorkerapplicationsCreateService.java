@@ -57,7 +57,7 @@ public class WorkerapplicationsCreateService implements AbstractCreateService<Wo
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "moment", "job", "worker");
+		request.bind(entity, errors, "moment", "job", "worker", "xxx4");
 	}
 
 	@Override
@@ -69,7 +69,13 @@ public class WorkerapplicationsCreateService implements AbstractCreateService<Wo
 		int jobId = request.getModel().getInteger("jobId");
 		model.setAttribute("jobId", jobId);
 
-		request.unbind(entity, model, "referenceNumber", "status", "statement", "skills", "qualifications", "password");
+		request.unbind(entity, model, "referenceNumber", "status", "statement", "skills", "qualifications", "answer");
+
+		boolean haveProtectedXxx4 = entity.getJob().getChallenge().getXxx4() != null;
+		if (haveProtectedXxx4) {
+			model.setAttribute("haveProtectedXxx4", haveProtectedXxx4);
+			request.unbind(entity, model, "xxx4.password");
+		}
 	}
 
 	@Override
@@ -106,9 +112,16 @@ public class WorkerapplicationsCreateService implements AbstractCreateService<Wo
 		errors.state(request, entity.spam(list, entity.getSkills()), "skills", "error.spam");
 		errors.state(request, entity.spam(list, entity.getQualifications()), "qualifications", "error.spam");
 
-		boolean checkPassword = this.isValidPassword(entity.getPassword());
-		errors.state(request, checkPassword, "password", "error.password");
-
+		//		boolean checkPassword = this.isValidPassword(entity.getXxx4().getPassword());
+		//		errors.state(request, checkPassword, "password", "error.password");
+		if (entity.getJob().getChallenge().getXxx4() != null) {
+			if (entity.getXxx4().getPassword() != null && entity.getJob().getChallenge().getXxx4().getPassword() != null && entity.getJob().getChallenge().getXxx4() != null) {
+				String applicationpassword = entity.getXxx4().getPassword();
+				String challengexxx4Pass = entity.getJob().getChallenge().getXxx4().getPassword();
+				boolean checkPass = applicationpassword.equals(challengexxx4Pass);
+				errors.state(request, checkPass, "xxx4.password", "error.password.notequals");
+			}
+		}
 	}
 
 	private Boolean isValidPassword(final String password) {
@@ -137,7 +150,11 @@ public class WorkerapplicationsCreateService implements AbstractCreateService<Wo
 
 		Date moment = new Date(System.currentTimeMillis() - 1);
 		entity.setMoment(moment);
-
+		if (entity.getXxx4() == null) {
+			entity.setXxx4(null);
+		} else {
+			this.repository.save(entity.getXxx4());
+		}
 		this.repository.save(entity);
 	}
 

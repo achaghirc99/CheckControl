@@ -12,3 +12,6 @@ administrator.dashboard-list.form.desviationOffers = Desviacion Tipica Ofertas
 administrator.dashboard-list.form.averageNumberOfJobsPerEmployer =  Media de puestos de trabajo por Empleado
 administrator.dashboard-list.form.averageNumberOfApplicationsPerWorker = Media de solicitudes por Trabajador
 administrator.dashboard-list.form.averageNumberOfApplicationsPerEmployer = Media de solicitudes por Empleado
+administrator.dashboard-list.form.ratioOfJobsWithChallenge = Trabajos con Reto
+administrator.dashboard-list.form.ratioChallengeWithMoreInfo = Retos que incluyen un XXX4
+administrator.dashboard-list.form.ratioOfApplicationsWithPasworedJob = Solicitudes que incluyen un XXX4 protegido con Contraseña

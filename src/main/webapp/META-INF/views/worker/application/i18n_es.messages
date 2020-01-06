@@ -21,3 +21,4 @@ worker.applications.form.button.createAnswer = Crear Respuesta
 
 error.spam = Error: spam
 error.password =Error en la Contraseña debe tener minimo: 5 letras, 3 digitos y un símbolo
+error.password.notequals = La contraseña de la solicitud no es igual que la contraseña de la propiedad protegida incluida en challenge

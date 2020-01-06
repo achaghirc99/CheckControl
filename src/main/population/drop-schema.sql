@@ -19,6 +19,10 @@
        drop 
        foreign key `FKmbjdoxi3o93agxosoate4sxbt`;
 
+    alter table `application` 
+       drop 
+       foreign key `FKbna4bqws0yovwmyoul7x2t6cm`;
+
     alter table `auditor` 
        drop 
        foreign key FK_clqcq9lyspxdxcp6o4f3vkelj;
@@ -66,6 +70,10 @@
     alter table `jobchallenge` 
        drop 
        foreign key `FK2ba5sve1u6cxenx14cbyjq49a`;
+
+    alter table `jobchallenge` 
+       drop 
+       foreign key `FK6uj3477c3jha0hbatc4xqpeyl`;
 
     alter table `message` 
        drop 
@@ -196,6 +204,8 @@
     drop table if exists `user_account`;
 
     drop table if exists `worker`;
+
+    drop table if exists `xxx4`;
 
     drop table if exists `hibernate_sequence`;
 

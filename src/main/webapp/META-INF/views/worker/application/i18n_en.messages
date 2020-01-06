@@ -22,3 +22,4 @@ worker.applications.form.button.createAnswer = Create Answer
 error.spam = Error: spam
 
 error.password =Error Password, it must have at least 5 letters, 3 digits and one simbol.
+error.password.notequals = Password of the application not equals to the password of the challenge of the Job

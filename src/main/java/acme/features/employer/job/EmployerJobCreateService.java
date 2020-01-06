@@ -132,11 +132,6 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 
 		}
 
-		String textChallenge = request.getModel().getString("challenge.text");
-		if (textChallenge == "" || textChallenge == null) {
-			entity.setChallenge(null);
-		}
-
 		boolean finalMode = request.getModel().getBoolean("finalMode");
 
 		if (finalMode == true) {

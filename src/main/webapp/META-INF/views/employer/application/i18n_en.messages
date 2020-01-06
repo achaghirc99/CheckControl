@@ -9,6 +9,7 @@ employer.applications.form.label.statement = Statement
 employer.applications.form.label.skills = Skills
 employer.applications.form.label.qualifications = Qualifications
 employer.applications.form.label.justification = Justification
+employer.applications.form.label.password = Password
 employer.applications.form.button.return = Return
 employer.applications.form.button.update = Update
 employer.applications.form.label.status.accepted = Accepted

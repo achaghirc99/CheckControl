@@ -24,15 +24,19 @@
 	<acme:form-textbox code="employer.applications.form.label.qualifications" path="qualifications" placeholder="Qualifications"/>
 	<jstl:if test="${command == 'show' }">
 	<acme:form-textbox code="employer.applications.form.label.status" path="status" placeholder="Status"/>
+		<jstl:if test="${havePassword == true }">
+			<acme:form-password code="employer.applications.form.label.password" path="password"/>	
+		</jstl:if>	
 		<jstl:if test="${status == 'REJECTED' }">
 			<acme:form-textarea code="employer.applications.form.label.justification" path="justification"/>
 		</jstl:if>
 	<jstl:if test="${haveAnswer == true and havePassword == true}">
-	<acme:form-textarea code="employer.applications.form.label.answer" path="answer.answer"/>
-		<jstl:if test="${haveOptional == true }">
-			<acme:form-textarea code="employer.applications.form.label.answer.optional" path="answer.optional"/>	
-		</jstl:if>
+		<acme:form-textarea code="employer.applications.form.label.answer" path="answer"/>
 	</jstl:if>
+	<jstl:if test="${haveAnswer == true and haveXxx4 == false }">
+		<acme:form-textarea code="employer.applications.form.label.answer" path="answer"/>
+	</jstl:if>
+	
 	<acme:form-submit code="employer.applications.form.button.update" method="get" action="/employer/application/update?id=${idApp}"/>
 	</jstl:if>
 	<jstl:if test="${command == 'update'}">

@@ -31,7 +31,7 @@
 	<acme:form-textbox code="administrator.dashboard-list.form.averageNumberOfApplicationsPerWorker" path="averageNumberOfApplicationsPerWorker"/>
 	<acme:form-textbox code="administrator.dashboard-list.form.averageNumberOfApplicationsPerEmployer" path="averageNumberOfApplicationsPerEmployer"/>
 	<acme:form-textbox code="administrator.dashboard-list.form.ratioOfJobsWithChallenge" path="ratioOfJobsWithChallenge"/>
-	<acme:form-textbox code="administrator.dashboard-list.form.ratioChallengeWithMoreInfo" path="ratioChallengeWithMoreInfo"/>
-	<acme:form-textbox code="administrator.dashboard-list.form.ratioOfApplicationsWithPasworedJob" path="ratioOfApplicationsWithPasworedJob"/>
+	<acme:form-textbox code="administrator.dashboard-list.form.ratioChallengeWithMoreInfo" path="ratioChallengeWithXxx4"/>
+	<acme:form-textbox code="administrator.dashboard-list.form.ratioOfApplicationsWithPasworedJob" path="ratioOfApplicationsWithPasworedXxx4"/>
 		
 </acme:form>

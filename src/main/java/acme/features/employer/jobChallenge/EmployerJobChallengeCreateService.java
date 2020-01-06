@@ -53,7 +53,7 @@ public class EmployerJobChallengeCreateService implements AbstractCreateService<
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "text", "moreInfo");
+		request.unbind(entity, model, "text", "moreInfo", "xxx4.password");
 		model.setAttribute("jobId", entity.getJob().getId());
 	}
 
@@ -79,8 +79,28 @@ public class EmployerJobChallengeCreateService implements AbstractCreateService<
 		boolean nonHaveChallenge = entity.getJob().getChallenge() == null;
 		errors.state(request, nonHaveChallenge, "text", "error.job.haveChallenge");
 
-	}
+		//		boolean checkPassword = this.isValidPassword(entity.getXxx4().getPassword());
+		//		errors.state(request, checkPassword, "password", "error.password");
 
+	}
+	private Boolean isValidPassword(final String password) {
+		Boolean res = false;
+		int numberDigits = 0, numberLetters = 0, numberSimbols = 0;
+		char c;
+		for (int i = 0; i < password.length(); i++) {
+			c = password.charAt(i);
+			String charToString = String.valueOf(c);
+			if (charToString.matches("[a-zA-ZÑñ ]")) {
+				numberLetters++;
+			} else if (charToString.matches("\\d")) {
+				numberDigits++;
+			} else {
+				numberSimbols++;
+			}
+		}
+		res = numberLetters >= 5 && numberDigits >= 3 && numberSimbols >= 1;
+		return res;
+	}
 	@Override
 	public void create(final Request<Jobchallenge> request, final Jobchallenge entity) {
 		assert request != null;
@@ -90,7 +110,7 @@ public class EmployerJobChallengeCreateService implements AbstractCreateService<
 		if (moreInfo == "" || moreInfo == null) {
 			entity.setMoreInfo(null);
 		}
-
+		this.repositorty.save(entity.getXxx4());
 		this.repositorty.save(entity);
 
 	}

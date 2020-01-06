@@ -19,7 +19,7 @@ import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 
-import acme.entities.answers.Answer;
+import acme.entities.jobchallenges.XXX4;
 import acme.entities.jobs.Job;
 import acme.entities.roles.Worker;
 import acme.entities.spams.Spamlist;
@@ -64,11 +64,12 @@ public class Application extends DomainEntity {
 	/**
 	 * Esto es lo nuevo añadido para el checkControl
 	 */
-	private String				password;
 
 	@Valid
-	@OneToOne(mappedBy = "application")
-	private Answer				answer;
+	@OneToOne(optional = true)
+	private XXX4				xxx4;
+
+	private String				answer;
 
 	//---------------------------------------------------------------------------------------
 

@@ -41,22 +41,22 @@ public class WorkerapplicationsShowService implements AbstractShowService<Worker
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "referenceNumber", "moment", "status", "statement", "skills", "qualifications", "justification", "password");
+		request.unbind(entity, model, "referenceNumber", "moment", "status", "statement", "skills", "qualifications", "justification");
 
 		model.setAttribute("applicationId", entity.getId());
-		boolean haveAnswer = entity.getAnswer() != null;
+		boolean haveAnswer = entity.getAnswer() != null || entity.getAnswer() != "";
 		model.setAttribute("haveAnswer", haveAnswer);
-		boolean havePassword = entity.getPassword() != null;
-		model.setAttribute("havePassword", havePassword);
-
-		if (entity.getPassword() != null) {
-			model.setAttribute("password", "[MASKED-PROTECTED]");
+		if (entity.getXxx4() != null) {
+			boolean havePassword = entity.getXxx4().getPassword() != null;
+			model.setAttribute("havePassword", havePassword);
+			if (havePassword) {
+				request.unbind(entity, model, "xxx4.password");
+				model.setAttribute("password", "[MASKED-PROTECTED]");
+			}
 		}
 
 		if (haveAnswer) {
-			boolean haveOpional = entity.getAnswer().getOptional() != "" || entity.getAnswer().getOptional() != null;
-			model.setAttribute("haveOptional", haveOpional);
-			request.unbind(entity, model, "answer.answer", "answer.optional");
+			request.unbind(entity, model, "answer");
 		}
 	}
 
