@@ -1,5 +1,5 @@
 
-package acme.entities.jobchallenges;
+package acme.entities.xxx4s;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
 
 import acme.entities.applications.Application;
+import acme.entities.jobchallenges.Jobchallenge;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;

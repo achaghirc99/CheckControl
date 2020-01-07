@@ -10,6 +10,7 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.entities.jobs.Job;
+import acme.entities.xxx4s.XXX4;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;

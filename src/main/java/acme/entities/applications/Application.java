@@ -19,10 +19,10 @@ import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 
-import acme.entities.jobchallenges.XXX4;
 import acme.entities.jobs.Job;
 import acme.entities.roles.Worker;
 import acme.entities.spams.Spamlist;
+import acme.entities.xxx4s.XXX4;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;

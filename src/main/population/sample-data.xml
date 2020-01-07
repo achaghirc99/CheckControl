@@ -1060,39 +1060,39 @@
 	</bean>
 
 	<!-- XXX4 -->
-	<bean id="xxx4" class="acme.entities.jobchallenges.XXX4">
+	<bean id="xxx4" class="acme.entities.xxx4s.XXX4">
 	<property name="password"><null/></property>
 	</bean>
 
-	<bean id="xxx4-2" class="acme.entities.jobchallenges.XXX4">
+	<bean id="xxx4-2" class="acme.entities.xxx4s.XXX4">
 	<property name="password" value="Amine123@"/>
 	</bean>
 	
-	<bean id="xxx4-3" class="acme.entities.jobchallenges.XXX4">
+	<bean id="xxx4-3" class="acme.entities.xxx4s.XXX4">
 	<property name="password" value="Amine123@"/>
 	</bean>
 	
-	<bean id="xxx4-4" class="acme.entities.jobchallenges.XXX4">
+	<bean id="xxx4-4" class="acme.entities.xxx4s.XXX4">
 	<property name="password" value="Amine123@"/>
 	</bean>
 	
-	<bean id="xxx4-5" class="acme.entities.jobchallenges.XXX4">
+	<bean id="xxx4-5" class="acme.entities.xxx4s.XXX4">
 	<property name="password" value="Amine123@"/>
 	</bean>
 	<!-- These xxx4 are for requests -->
-	<bean id="xxx4-6" class="acme.entities.jobchallenges.XXX4">
+	<bean id="xxx4-6" class="acme.entities.xxx4s.XXX4">
 	<property name="password" value="Amine123@"/>
 	</bean>
 	
-	<bean id="xxx4-7" class="acme.entities.jobchallenges.XXX4">
+	<bean id="xxx4-7" class="acme.entities.xxx4s.XXX4">
 	<property name="password" value="Amine123@"/>
 	</bean>
 	
-	<bean id="xxx4-8" class="acme.entities.jobchallenges.XXX4">
+	<bean id="xxx4-8" class="acme.entities.xxx4s.XXX4">
 	<property name="password" value="Amine123@"/>
 	</bean>
 	
-	<bean id="xxx4-9" class="acme.entities.jobchallenges.XXX4">
+	<bean id="xxx4-9" class="acme.entities.xxx4s.XXX4">
 	<property name="password" value="Amine123@"/>
 	</bean>
 	

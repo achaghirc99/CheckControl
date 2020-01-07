@@ -25,10 +25,10 @@ public class EmployerJobChallengeCreateService implements AbstractCreateService<
 		assert request != null;
 		boolean res = false;
 
-		String id = request.getServletRequest().getParameter("id");
+		Integer id = request.getModel().getInteger("id");
 		Principal principal = request.getPrincipal();
 
-		Job job = this.repositorty.getJobById(Integer.parseInt(id));
+		Job job = this.repositorty.getJobById(id);
 
 		Employer e = job.getEmployer();
 
