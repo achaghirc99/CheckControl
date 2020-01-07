@@ -27,13 +27,14 @@
 		<jstl:if test="${havePassword == true }">
 			<acme:form-password code="employer.applications.form.label.password" path="password"/>	
 		</jstl:if>	
+		<jstl:if test="${haveTrackNumber == true }">
+			<acme:form-url code="worker.applications.form.label.trackNumber" path="trackNumber"/>
+		</jstl:if>
 		<jstl:if test="${status == 'REJECTED' }">
 			<acme:form-textarea code="employer.applications.form.label.justification" path="justification"/>
 		</jstl:if>
-	<jstl:if test="${haveAnswer == true and havePassword == true}">
-		<acme:form-textarea code="employer.applications.form.label.answer" path="answer"/>
-	</jstl:if>
-	<jstl:if test="${haveAnswer == true and haveXxx4 == false }">
+	
+	<jstl:if test="${haveAnswer == true}">
 		<acme:form-textarea code="employer.applications.form.label.answer" path="answer"/>
 	</jstl:if>
 	

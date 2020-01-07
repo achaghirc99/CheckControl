@@ -13,7 +13,7 @@ worker.applications.list.label.skills = Skills
 worker.applications.list.label.qualifications = Qualifications
 worker.applications.form.label.password = Password
 worker.applications.form.label.answer.answer = Answer 
-worker.applications.form.label.answer.optional = Answer Optional
+worker.applications.form.label.trackNumber = Track Number
 
 worker.applications.form.button.return = Return
 worker.applications.form.button.create = Create
@@ -22,4 +22,4 @@ worker.applications.form.button.createAnswer = Create Answer
 error.spam = Error: spam
 
 error.password =Error Password, it must have at least 5 letters, 3 digits and one simbol.
-error.password.notequals = Password of the application not equals to the password of the challenge of the Job
+error.Password.withoutTrakNumber = Password without trackNumber.

@@ -1,11 +1,11 @@
 
-package acme.features.employer.jobChallenge;
+package acme.features.employer.passfas;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.jobchallenges.Jobchallenge;
 import acme.entities.jobs.Job;
+import acme.entities.passfas.Passfa;
 import acme.entities.roles.Employer;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
@@ -14,14 +14,14 @@ import acme.framework.entities.Principal;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class EmployerJobChallengeCreateService implements AbstractCreateService<Employer, Jobchallenge> {
+public class EmployerPassfaCreateService implements AbstractCreateService<Employer, Passfa> {
 
 	@Autowired
-	EmployerJobChallengeRepository repositorty;
+	EmployerPassfaRepository repositorty;
 
 
 	@Override
-	public boolean authorise(final Request<Jobchallenge> request) {
+	public boolean authorise(final Request<Passfa> request) {
 		assert request != null;
 		boolean res = false;
 
@@ -38,7 +38,7 @@ public class EmployerJobChallengeCreateService implements AbstractCreateService<
 	}
 
 	@Override
-	public void bind(final Request<Jobchallenge> request, final Jobchallenge entity, final Errors errors) {
+	public void bind(final Request<Passfa> request, final Passfa entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -48,19 +48,19 @@ public class EmployerJobChallengeCreateService implements AbstractCreateService<
 	}
 
 	@Override
-	public void unbind(final Request<Jobchallenge> request, final Jobchallenge entity, final Model model) {
+	public void unbind(final Request<Passfa> request, final Passfa entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "text", "moreInfo", "xxx4.password");
+		request.unbind(entity, model, "text", "trackNumber");
 		model.setAttribute("jobId", entity.getJob().getId());
 	}
 
 	@Override
-	public Jobchallenge instantiate(final Request<Jobchallenge> request) {
+	public Passfa instantiate(final Request<Passfa> request) {
 		assert request != null;
-		Jobchallenge challenge = new Jobchallenge();
+		Passfa challenge = new Passfa();
 
 		String id = request.getServletRequest().getParameter("id");
 		Job job = this.repositorty.getJobById(Integer.parseInt(id));
@@ -71,26 +71,25 @@ public class EmployerJobChallengeCreateService implements AbstractCreateService<
 	}
 
 	@Override
-	public void validate(final Request<Jobchallenge> request, final Jobchallenge entity, final Errors errors) {
+	public void validate(final Request<Passfa> request, final Passfa entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
 
-		boolean nonHaveChallenge = entity.getJob().getChallenge() == null;
-		errors.state(request, nonHaveChallenge, "text", "error.job.haveChallenge");
+		boolean nonHavePassfa = entity.getJob().getPassfa() == null;
+		errors.state(request, nonHavePassfa, "text", "error.job.havePassfa");
 
 	}
 
 	@Override
-	public void create(final Request<Jobchallenge> request, final Jobchallenge entity) {
+	public void create(final Request<Passfa> request, final Passfa entity) {
 		assert request != null;
 		assert entity != null;
 
-		String moreInfo = request.getModel().getString("moreInfo");
-		if (moreInfo == "" || moreInfo == null) {
-			entity.setMoreInfo(null);
+		String trackNumber = request.getModel().getString("trackNumber");
+		if (trackNumber == "" || trackNumber == null) {
+			entity.setTrackNumber(null);
 		}
-		this.repositorty.save(entity.getXxx4());
 		this.repositorty.save(entity);
 
 	}

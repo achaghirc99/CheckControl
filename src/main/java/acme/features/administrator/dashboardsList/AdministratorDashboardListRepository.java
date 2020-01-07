@@ -51,13 +51,13 @@ public interface AdministratorDashboardListRepository extends AbstractRepository
 	@Query("select avg(select count(a) from Application a where " + "exists(select j from Job j where j.employer.id = e.id and a.job.id = j.id)) " + "from Employer e")
 	Double averageNumberOfApplicationsPerEmployer();
 
-	@Query("select 1.0*count(j) / (select count(a) from Job a) from Jobchallenge j where j.job.id is not null")
+	@Query("select 1.0*count(j) / (select count(a) from Job a) from Passfa j where j.job.id is not null")
 	Double getRatioJobsWithChallenge();
 
-	@Query("select 1.0 * count(c) / (select count(b) from Jobchallenge b) from Jobchallenge c where c.xxx4 is not null")
-	Double getRatioChallengeWithXxx4();
+	@Query("select 1.0 * count(c) / (select count(b) from Passfa b) from Passfa c where c.trackNumber is not null")
+	Double getRatioPassfasWithTrackNumber();
 
-	@Query("select 1.0 * count(a) / (select count(c) from Application c) from Application a where a.xxx4.password is not null")
-	Double getRatioOfApplicationsWithPasworedXXX4();
+	@Query("select 1.0 * count(a) / (select count(c) from Application c) from Application a where a.password is not null")
+	Double getRatioOfApplicationsWithPasworedTrackNumber();
 
 }

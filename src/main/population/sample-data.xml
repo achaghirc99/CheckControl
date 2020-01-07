@@ -1058,85 +1058,46 @@
 			</list>
 		</property>
 	</bean>
-
-	<!-- XXX4 -->
-	<bean id="xxx4" class="acme.entities.xxx4s.XXX4">
-	<property name="password"><null/></property>
-	</bean>
-
-	<bean id="xxx4-2" class="acme.entities.xxx4s.XXX4">
-	<property name="password" value="Amine123@"/>
-	</bean>
-	
-	<bean id="xxx4-3" class="acme.entities.xxx4s.XXX4">
-	<property name="password" value="Amine123@"/>
-	</bean>
-	
-	<bean id="xxx4-4" class="acme.entities.xxx4s.XXX4">
-	<property name="password" value="Amine123@"/>
-	</bean>
-	
-	<bean id="xxx4-5" class="acme.entities.xxx4s.XXX4">
-	<property name="password" value="Amine123@"/>
-	</bean>
-	<!-- These xxx4 are for requests -->
-	<bean id="xxx4-6" class="acme.entities.xxx4s.XXX4">
-	<property name="password" value="Amine123@"/>
-	</bean>
-	
-	<bean id="xxx4-7" class="acme.entities.xxx4s.XXX4">
-	<property name="password" value="Amine123@"/>
-	</bean>
-	
-	<bean id="xxx4-8" class="acme.entities.xxx4s.XXX4">
-	<property name="password" value="Amine123@"/>
-	</bean>
-	
-	<bean id="xxx4-9" class="acme.entities.xxx4s.XXX4">
-	<property name="password" value="Amine123@"/>
-	</bean>
-	
 	
 	
 	
 
-	<!-- JobChallenge -->
+	<!-- Passfa -->
 
-	<bean id="jobChallenge1" class="acme.entities.jobchallenges.Jobchallenge">
+	<bean id="passfa1" class="acme.entities.passfas.Passfa">
 	<property name="text" value="Este es el primer ejemplo de un reto de un trabajo"/>
-	<property name="moreInfo" value="http://www.example.com"/>
+	<property name="trackNumber" value="http://www.example.com"/>
 	<property name="job" ref="job1"/>	
-	<property name="xxx4" ref="xxx4"/>	
 	</bean>
 	
-	<bean id="jobChallenge2" class="acme.entities.jobchallenges.Jobchallenge">
+	<bean id="passfa2" class="acme.entities.passfas.Passfa">
 	<property name="text" value="Este es el segundo ejemplo de un reto de un trabajo"/>
-	<property name="moreInfo"><null/></property>
+	<property name="trackNumber"><null/></property>
 	<property name="job" ref="job2"/>	
-	<property name="xxx4" ref="xxx4-2"/>	
 	</bean>
 	
-	<bean id="jobChallenge3" class="acme.entities.jobchallenges.Jobchallenge">
+	<bean id="passfa3" class="acme.entities.passfas.Passfa">
 	<property name="text" value="Este es el tercer ejemplo de un reto de un trabajo"/>
-	<property name="moreInfo"><null/></property>
+	<property name="trackNumber"><null/></property>
 	<property name="job" ref="job3"/>	
-	<property name="xxx4" ref="xxx4-3"/>	
 	</bean>
 	
-	<bean id="jobChallenge4" class="acme.entities.jobchallenges.Jobchallenge">
+	<bean id="passfa4" class="acme.entities.passfas.Passfa">
 	<property name="text" value="Este es el cuarto ejemplo de un reto de un trabajo"/>
-	<property name="moreInfo"><null/></property>
+	<property name="trackNumber"><null/></property>
 	<property name="job" ref="job4"/>		
-	<property name="xxx4" ref="xxx4-4"/>	
 	</bean>
 
-	<bean id="jobChallenge5" class="acme.entities.jobchallenges.Jobchallenge">
+	<bean id="passfa5" class="acme.entities.passfas.Passfa">
 	<property name="text" value="Este es el quinto ejemplo de un reto de un trabajo"/>
-	<property name="moreInfo" value="http://www.example.com"/>
+	<property name="trackNumber" value="http://www.example.com"/>
 	<property name="job" ref="job5"/>	
-	<property name="xxx4" ><null/></property>	
 	</bean>
-	
+	<bean id="passfa7" class="acme.entities.passfas.Passfa">
+	<property name="text" value="Este es el septimo ejemplo de un reto de un trabajo"/>
+	<property name="trackNumber" value="http://www.example.com"/>
+	<property name="job" ref="job7"/>	
+	</bean>
 
 	<!-- Jobs -->
 	
@@ -1149,7 +1110,7 @@
 		<property name="salary" value="€ 15,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="descriptor" ref="descriptor01"/>
-		<property name="challenge" ref="jobChallenge1"/>
+		<property name="passfa" ref="passfa1"/>
 		<property name="finalMode" value="false"/>
 		<property name="employer" ref="employer1Employer"/>
 		<property name="application">
@@ -1176,7 +1137,7 @@
 		<property name="salary" value="$ 20,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="descriptor" ref="descriptor02"/>
-		<property name="challenge" ref="jobChallenge2"/>
+		<property name="passfa" ref="passfa2"/>
 		<property name="finalMode" value="true"/>
 		<property name="employer" ref="employer1Employer"/>
 		<property name="application">
@@ -1203,7 +1164,7 @@
 		<property name="salary" value="€ 24,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="descriptor" ref="descriptor03"/>
-		<property name="challenge" ref="jobChallenge3"/>
+		<property name="passfa" ref="passfa3"/>
 		<property name="finalMode" value="true"/>
 		<property name="employer" ref="employer2Employer"/>
 		<property name="application">
@@ -1229,7 +1190,7 @@
 		<property name="salary" value="€ 24,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="descriptor" ref="descriptor04"/>
-		<property name="challenge" ref="jobChallenge4"/>
+		<property name="passfa" ref="passfa4"/>
 		<property name="finalMode" value="false"/>
 		<property name="employer" ref="employer2Employer"/>
 		<property name="application">
@@ -1255,7 +1216,7 @@
 		<property name="salary" value="€ 24,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="descriptor" ref="descriptor05"/>
-		<property name="challenge" ref="jobChallenge5"/>
+		<property name="passfa" ref="passfa5"/>
 		<property name="finalMode" value="true"/>
 		<property name="employer" ref="employer2Employer"/>
 		<property name="application">
@@ -1281,7 +1242,7 @@
 		<property name="salary" value="€ 12,000.00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="descriptor" ref="descriptor06"/>
-		<property name="challenge"><null/></property>
+		<property name="passfa"><null/></property>
 		<property name="finalMode" value="false"/>
 		<property name="employer" ref="employer1Employer"/>
 		<property name="application">
@@ -1298,6 +1259,36 @@
         </property>
 	</bean>
 	
+	
+		<bean id="job7"  class="acme.entities.jobs.Job">
+		<property name="reference" value="EMP1-JOB7"/>
+		<property name="title" value="Job 7"/>
+		<property name="status" value="PUBLISHED"/>
+		<property name="description" value="This is the seventh job of the first employer"/>
+		<property name="deadline" value="2020/11/12 23:59"/>
+		<property name="salary" value="€ 22,000.00"/>
+		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="descriptor" ref="descriptor06"/>
+		<property name="passfa" ref="passfa7"/>
+		<property name="finalMode" value="true"/>
+		<property name="employer" ref="employer1Employer"/>
+		<property name="application">
+			<list>
+<!-- 				<ref bean="Application13"/> -->
+<!-- 				<ref bean="Application14"/> -->
+			</list>			
+		</property>
+		<property name="auditRecord">
+            <list>
+            <ref bean="auditRecord13"/>
+            <ref bean="auditRecord14"/>
+            </list>
+        </property>
+	</bean>
+	
+	
+	
+	
 	<!-- Workerapplications -->
 	
 	<bean name= "Application1" class= "acme.entities.applications.Application">
@@ -1308,8 +1299,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4" ><null/></property>
 		<property name="answer" value="This is the first answer"/>
+		<property name="trackNumber" value="https://www.example.com"/>
+		<property name="password" ><null/></property>
 		<property name="worker" ref="worker1Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -1322,8 +1314,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4"><null/></property>
+		<property name="password" value="Contraseña123@"/>
 		<property name="answer" value="This is the second answer"/>
+		<property name="trackNumber" value="https://www.example.com"/>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -1336,7 +1329,8 @@
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value="Sorry you don't have the qualifications that we need in our company"/>
 		<property name="answer" value="This is the third answer"/>
-		<property name="xxx4" ref="xxx4-6"/>
+		<property name="trackNumber" value="https://www.example.com"/>
+		<property name="password" value="Contraseña123@"/>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job2"/>
 	</bean>
@@ -1350,8 +1344,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4" ref="xxx4-7"/>
 		<property name="answer" value="This is the fourth answer"/>
+		<property name="trackNumber" value="https://www.example.com"/>
+		<property name="password" value="Contraseña123@"/>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job2"/>
 	</bean>
@@ -1364,8 +1359,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and PHP developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4" ><null/></property>
+		<property name="password" ><null/></property>
 		<property name="answer" value="This is the fifth answer"/>
+		<property name="trackNumber" value="https://www.example.com"/>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job6"/>
 	</bean>
@@ -1379,7 +1375,8 @@
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value="Sorry you don't have the qualifications that we need in our company"/>
 		<property name="answer" value="This is the sixth answer"/>
-		<property name="xxx4" ><null/></property>
+		<property name="trackNumber" value="https://www.example.com"/>
+		<property name="password" ><null/></property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job6"/>
 	</bean>
@@ -1391,8 +1388,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and PHP developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4" ref="xxx4-8"/>
 		<property name="answer" value="This is the seventh answer"/>
+		<property name="trackNumber" value="https://www.example.com"/>
+		<property name="password" value="Contraseña123@"/>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job4"/>
 	</bean>
@@ -1405,8 +1403,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4" ref="xxx4-9"/>
+		<property name="password" value="Contraseña123@"/>
 		<property name="answer"><null/></property>
+		<property name="trackNumber" ><null/></property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job4"/>
 	</bean>
@@ -1418,8 +1417,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and PHP developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4" ><null/></property>
+		<property name="password" ><null/></property>
 		<property name="answer"><null/></property>
+		<property name="trackNumber" ><null/></property>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job5"/>
 	</bean>
@@ -1432,8 +1432,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4" ><null/></property>
+		<property name="password" ><null/></property>
 		<property name="answer"><null/></property>
+		<property name="trackNumber" ><null/></property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job5"/>
 	</bean>
@@ -1447,8 +1448,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and PHP developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4" ><null/></property>
+		<property name="password" ><null/></property>
 		<property name="answer"><null/></property>
+		<property name="trackNumber" ><null/></property>
 		<property name="worker" ref="worker1Worker" />
 		<property name="job" ref="job3"/>
 	</bean>
@@ -1461,8 +1463,9 @@
 		<property name="skills" value="Great ability to work in teams" />
 		<property name="qualifications" value="Java, C ++ and JavaScript Developer" />
 		<property name="justification" value=""/>
-		<property name="xxx4" ><null/></property>
+		<property name="password" ><null/></property>
 		<property name="answer"><null/></property>
+		<property name="trackNumber" ><null/></property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job3"/>
 	</bean>
@@ -1587,6 +1590,25 @@
 		<property name="moment" value="2019/11/28 17:00" />
 		<property name="body" value="This is a body 12" />
 		<property name="job" ref="job6" />
+		<property name="auditor" ref="auditor01"/>
+	</bean>
+	<bean id="auditRecord13" class="acme.entities.auditRecords.Auditrecord">
+		<property name="title" value="This is a title 13" />
+		<property name="status" value="PUBLISHED"/>
+	<!--	<property name="finalMode" value="true" /> -->
+		<property name="moment" value="2019/11/27 17:00" />
+		<property name="body" value="This is a body 11" />
+		<property name="job" ref="job7" />
+		<property name="auditor" ref="auditor02"/>
+	</bean>
+	
+	<bean id="auditRecord14" class="acme.entities.auditRecords.Auditrecord">
+		<property name="title" value="This is a title 14" />
+		<property name="status" value="DRAFT"/>
+	<!--	<property name="finalMode" value="false" /> -->
+		<property name="moment" value="2019/11/28 17:00" />
+		<property name="body" value="This is a body 12" />
+		<property name="job" ref="job7" />
 		<property name="auditor" ref="auditor01"/>
 	</bean>
 	

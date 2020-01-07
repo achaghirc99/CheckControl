@@ -18,7 +18,7 @@
 		$(document).ready(function(){
 			var data = {
 					labels : [
-						"Jobs With Challenge","Challenge with Xxx4","Applications with password-protected xxx4"
+						"Jobs With Passfa","Passfa with Track Number","Applications with password-protected TrackNumber"
 					],
 					datasets : [
 						{

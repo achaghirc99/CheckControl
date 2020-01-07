@@ -1,0 +1,7 @@
+employer.job.form.label.challenge.text = Texto
+employer.job.form.label.challenge.trackNumber = Numero de Pista
+
+employer.job.form.button.passfa.create = Crear
+employer.job.form.button.passfa.return = Volver
+
+error.job.haveChallenge = Este trabajo ya tiene un reto 

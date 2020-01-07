@@ -25,14 +25,24 @@
 	<acme:form-textbox code="worker.applications.form.label.skills" path="skills" placeholder="Skills"/>
 	<acme:form-textbox code="worker.applications.form.label.qualifications" path="qualifications" placeholder="Qualifications"/>
 	<jstl:if test="${command == 'create' }">
-	<jstl:if test="${haveProtectedXxx4 == true }">
-		<acme:form-password code="worker.applications.form.label.password" path="xxx4.password"/>
-	</jstl:if>
+	<acme:form-url code="worker.applications.form.label.trackNumber" path="trackNumber"/>
+	<acme:form-password code="worker.applications.form.label.password" path="password"/>
 	<acme:form-textarea code="worker.applications.form.label.answer.answer" path="answer"/>
 	</jstl:if>
-	<jstl:if test="${havePassword == true }">
-	<acme:form-password code="worker.applications.form.label.password" path="xxx4.password"/>
+	<jstl:if test="${haveTrackNumber == true }">
+	<acme:form-url code="worker.applications.form.label.trackNumber" path="trackNumber"/>
 	</jstl:if>
+	<jstl:if test="${havePassword == true }">
+	<acme:form-password code="worker.applications.form.label.password" path="password"/>
+	</jstl:if>
+	<jstl:if test="${command =='show' }">
+	<jstl:if test="${havePassfa == true }">
+	<acme:form-textarea code="worker.applications.form.label.answer.answer" path="answer"/>
+	</jstl:if>
+	</jstl:if>
+<%-- 	<jstl:if test="${havePassword == true }"> --%>
+<%-- 	<acme:form-password code="worker.applications.form.label.password" path="xxx4.password"/> --%>
+<%-- 	</jstl:if> --%>
 	
 	<jstl:if test="${status == 'REJECTED' }">
 	<acme:form-textarea code="employer.applications.form.label.justification" path="justification"/>

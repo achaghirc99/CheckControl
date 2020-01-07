@@ -18,7 +18,7 @@
 
 <tiles-definitions>
 	
-	<definition name="employer/jobchallenge/form" extends="master">
-		<put-attribute name="body" type="template" value="../employer/jobchallenge/form.jsp" />
+	<definition name="employer/passfa/form" extends="master">
+		<put-attribute name="body" type="template" value="../employer/passfa/form.jsp" />
 	</definition>
 </tiles-definitions>

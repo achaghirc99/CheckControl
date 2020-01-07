@@ -24,7 +24,7 @@ import org.hibernate.validator.constraints.URL;
 
 import acme.entities.applications.Application;
 import acme.entities.auditRecords.Auditrecord;
-import acme.entities.jobchallenges.Jobchallenge;
+import acme.entities.passfas.Passfa;
 import acme.entities.roles.Employer;
 import acme.entities.spams.Spamlist;
 import acme.framework.datatypes.Money;
@@ -75,7 +75,7 @@ public class Job extends DomainEntity {
 
 	@Valid
 	@OneToOne(mappedBy = "job")
-	private Jobchallenge			challenge;
+	private Passfa					passfa;
 
 	@Valid
 	@ManyToOne(optional = false)

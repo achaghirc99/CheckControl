@@ -135,7 +135,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		//--------------------------------CHECK CONTROL---------------------------------------------------------------------------------------
 		Double ratioOfJobsWithChallenge = this.repository.getRatioJobsWithChallenge();
-		Double ratioChallengeWithXxx4 = this.repository.getRatioChallengeWithXxx4();
+		Double ratioChallengeWithXxx4 = this.repository.getRatioPassfasWithTrackNumber();
 		Double ratioOfApplicationsWithPasworedXXX = this.repository.getRatioOfApplicationsWithPasworedXXX();
 		String[] ratios = new String[3];
 		ratios[0] = ratioOfJobsWithChallenge.toString();

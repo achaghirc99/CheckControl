@@ -16,6 +16,9 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly = "true">
+	<acme:form-textbox code="administrator.dashboard-list.form.ratioOfJobsWithPassfas" path="ratioOfJobsWithPassfas"/>
+	<acme:form-textbox code="administrator.dashboard-list.form.ratioPassfasWithTrackNumber" path="ratioPassfasWithTrackNumber"/>
+	<acme:form-textbox code="administrator.dashboard-list.form.ratioOfApplicationsWithPasworedTrackNumber" path="ratioOfApplicationsWithPasworedTrackNumber"/>
 	<acme:form-textbox code="administrator.dashboard-list.form.totalNumberAnnouncement" path="totalNumberAnnouncement" />
 	<acme:form-textbox code="administrator.dashboard-list.form.totalNumberInvestor" path="totalNumberInvestor"/>
 	<acme:form-textbox code="administrator.dashboard-list.form.totalNumberCompany" path="totalNumberCompany"/>	
@@ -30,8 +33,6 @@
 	<acme:form-textbox code="administrator.dashboard-list.form.averageNumberOfJobsPerEmployer" path="averageNumberOfJobsPerEmployer"/>
 	<acme:form-textbox code="administrator.dashboard-list.form.averageNumberOfApplicationsPerWorker" path="averageNumberOfApplicationsPerWorker"/>
 	<acme:form-textbox code="administrator.dashboard-list.form.averageNumberOfApplicationsPerEmployer" path="averageNumberOfApplicationsPerEmployer"/>
-	<acme:form-textbox code="administrator.dashboard-list.form.ratioOfJobsWithChallenge" path="ratioOfJobsWithChallenge"/>
-	<acme:form-textbox code="administrator.dashboard-list.form.ratioChallengeWithMoreInfo" path="ratioChallengeWithXxx4"/>
-	<acme:form-textbox code="administrator.dashboard-list.form.ratioOfApplicationsWithPasworedJob" path="ratioOfApplicationsWithPasworedXxx4"/>
+	
 		
 </acme:form>

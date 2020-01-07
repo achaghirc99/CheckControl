@@ -1,7 +1,0 @@
-employer.job.form.label.challenge.text = Text
-employer.job.form.label.challenge.moreInfo = More Info
-
-employer.job.form.button.challenge.create = Create
-employer.job.form.button.challenge.return = Return
-
-error.job.haveChallenge = The job already have a challenge

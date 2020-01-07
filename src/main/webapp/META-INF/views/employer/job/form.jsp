@@ -26,12 +26,12 @@
 		<acme:form-money code="employer.job.form.label.salary" path="salary" placeholder="Moneda(EUR, USD..) Valor" />
 		<acme:form-url code="employer.job.form.label.moreInfo" path="moreInfo" placeholder="http://www.example.com" />
 		<acme:form-textbox code="employer.job.form.label.descriptor.description" path="descriptor.description" />
-		<jstl:if test="${haveChallenge == true }">
-		<jstl:if test="${textChallenge == true}">
-			<acme:form-textarea code="employer.job.form.label.challenge.text" path="challenge.text" placeholder="Text of Challenge" />	
+		<jstl:if test="${havePassfa == true }">
+		<jstl:if test="${textPassfa == true}">
+			<acme:form-textarea code="employer.job.form.label.passfa.text" path="passfa.text" placeholder="Text of Challenge" />	
 		</jstl:if>
-		<jstl:if test="${moreInfoChallenge == true}">
-		<acme:form-url code="employer.job.form.label.challenge.moreInfo" path="challenge.moreInfo" placeholder="http://www.example.com" />	
+		<jstl:if test="${trackNumberPassfa == true}">
+		<acme:form-url code="employer.job.form.label.passfa.trackNumber" path="passfa.trackNumber" placeholder="http://www.example.com" />	
 		</jstl:if>
 		</jstl:if>
 		<acme:form-hidden path="${idDescriptor }"/>
@@ -40,7 +40,7 @@
 		<acme:form-submit code="employer.job.form.button.crear-duty" test="${finalMode == false}" method="get" action="/employer/duty/create?idDescriptor=${idDescriptor}"/>
 		<acme:form-submit code="employer.job.form.button.auditRecord" method="get" action="/employer/auditrecord/list?id=${jobId}"/>	
 		<acme:form-submit code="employer.job.form.button.update" test="${finalMode == false}"  method="get" action="/employer/job/update?id=${jobId}"/>
-		<acme:form-submit code="employer.job.form.button.job.createChallenge" method="get" action="/employer/jobchallenge/create?id=${jobId}"/>
+		<acme:form-submit code="employer.job.form.button.job.createPassfa" method="get" action="/employer/passfa/create?id=${jobId}"/>
 		<acme:form-submit code="employer.job.form.button.delete" action="/employer/job/delete"/>
 </acme:form>
 </jstl:if>
@@ -55,7 +55,7 @@
 		<acme:form-url code="employer.job.form.label.moreInfo" path="moreInfo" placeholder="http://www.example.com" />
 		<acme:form-textbox code="employer.job.form.label.descriptor.description" path="descriptor.description" placeholder="Description" />	
 		<acme:form-checkbox code="employer.job.form.label.finalMode" path="finalMode"/>
-		<jstl:if test="${command == 'update' and haveChallenge==true}">
+		<jstl:if test="${command == 'update' and havePassfa==true}">
 		<acme:form-textarea code="employer.job.form.label.challenge.text" path="challenge.text" placeholder="Text of Challenge" />	
 		<acme:form-url code="employer.job.form.label.challenge.moreInfo" path="challenge.moreInfo" placeholder="http://www.example.com" />	
 		</jstl:if>

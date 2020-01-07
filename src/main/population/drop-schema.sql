@@ -19,10 +19,6 @@
        drop 
        foreign key `FKmbjdoxi3o93agxosoate4sxbt`;
 
-    alter table `application` 
-       drop 
-       foreign key `FKbna4bqws0yovwmyoul7x2t6cm`;
-
     alter table `auditor` 
        drop 
        foreign key FK_clqcq9lyspxdxcp6o4f3vkelj;
@@ -67,14 +63,6 @@
        drop 
        foreign key `FK3rxjf8uh6fh2u990pe8i2at0e`;
 
-    alter table `jobchallenge` 
-       drop 
-       foreign key `FK2ba5sve1u6cxenx14cbyjq49a`;
-
-    alter table `jobchallenge` 
-       drop 
-       foreign key `FK6uj3477c3jha0hbatc4xqpeyl`;
-
     alter table `message` 
        drop 
        foreign key `FKn5adlx3oqjna7aupm8gwg3fuj`;
@@ -102,6 +90,10 @@
     alter table `noncommercialbanner` 
        drop 
        foreign key `FKrcem4cf2s7ir1wwyaux4p9ke8`;
+
+    alter table `passfa` 
+       drop 
+       foreign key `FKkw4t9uytyi2b59wi5qcjv67xe`;
 
     alter table `provider` 
        drop 
@@ -169,8 +161,6 @@
 
     drop table if exists `job`;
 
-    drop table if exists `jobchallenge`;
-
     drop table if exists `message`;
 
     drop table if exists `message_thread`;
@@ -182,6 +172,8 @@
     drop table if exists `noncommercialbanner`;
 
     drop table if exists `offer`;
+
+    drop table if exists `passfa`;
 
     drop table if exists `provider`;
 

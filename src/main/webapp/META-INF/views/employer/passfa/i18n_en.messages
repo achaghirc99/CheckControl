@@ -1,0 +1,7 @@
+employer.job.form.label.passfa.text = Text
+employer.job.form.label.passfa.trackNumber = Track Number
+
+employer.job.form.button.passfa.create = Create
+employer.job.form.button.passfa.return = Return
+
+error.job.havepassfa = The job already have a passfa

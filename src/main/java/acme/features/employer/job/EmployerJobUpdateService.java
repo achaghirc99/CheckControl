@@ -69,12 +69,12 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 			request.transfer(model, "finalMode");
 		}
 
-		if (entity.getChallenge() != null) {
-			model.setAttribute("textChallenge", entity.getChallenge().getText());
+		if (entity.getPassfa() != null) {
+			model.setAttribute("textChallenge", entity.getPassfa().getText());
 			request.unbind(entity, model, "challenge.text", "challenge.moreInfo");
 
-			if (entity.getChallenge().getMoreInfo() != "" || entity.getChallenge().getMoreInfo() != null) {
-				model.setAttribute("moreInfoChallenge", entity.getChallenge().getMoreInfo());
+			if (entity.getPassfa().getTrackNumber() != "" || entity.getPassfa().getTrackNumber() != null) {
+				model.setAttribute("moreInfoChallenge", entity.getPassfa().getTrackNumber());
 			}
 		}
 	}
@@ -172,7 +172,9 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		}
 
 		this.repository.save(entity);
-		this.repository.save(entity.getChallenge());
+		if (entity.getPassfa() != null) {
+			this.repository.save(entity.getPassfa());
+		}
 		this.repository.save(entity.getDescriptor());
 
 		for (Duty d : entity.getDescriptor().getDuties()) {

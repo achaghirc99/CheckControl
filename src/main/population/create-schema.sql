@@ -38,14 +38,15 @@
         `answer` varchar(255),
         `justification` varchar(255),
         `moment` datetime(6),
+        `password` varchar(255),
         `qualifications` varchar(255),
         `reference_number` varchar(255),
         `skills` varchar(255),
         `statement` varchar(255),
         `status` integer,
+        `track_number` varchar(255),
         `job_id` integer not null,
         `worker_id` integer not null,
-        `xxx4_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -205,16 +206,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `jobchallenge` (
-       `id` integer not null,
-        `version` integer not null,
-        `more_info` varchar(255),
-        `text` varchar(255),
-        `job_id` integer,
-        `xxx4_id` integer,
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `message` (
        `id` integer not null,
         `version` integer not null,
@@ -271,6 +262,15 @@
         `text` varchar(255),
         `ticker` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `passfa` (
+       `id` integer not null,
+        `version` integer not null,
+        `text` varchar(255),
+        `track_number` varchar(255),
+        `job_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -456,11 +456,6 @@ create index IDX7mpr4u7oxcyr0nrl5osmj05uh on `requeststore` (`ticker`);
        foreign key (`worker_id`) 
        references `worker` (`id`);
 
-    alter table `application` 
-       add constraint `FKbna4bqws0yovwmyoul7x2t6cm` 
-       foreign key (`xxx4_id`) 
-       references `xxx4` (`id`);
-
     alter table `auditor` 
        add constraint FK_clqcq9lyspxdxcp6o4f3vkelj 
        foreign key (`user_account_id`) 
@@ -516,16 +511,6 @@ create index IDX7mpr4u7oxcyr0nrl5osmj05uh on `requeststore` (`ticker`);
        foreign key (`employer_id`) 
        references `employer` (`id`);
 
-    alter table `jobchallenge` 
-       add constraint `FK2ba5sve1u6cxenx14cbyjq49a` 
-       foreign key (`job_id`) 
-       references `job` (`id`);
-
-    alter table `jobchallenge` 
-       add constraint `FK6uj3477c3jha0hbatc4xqpeyl` 
-       foreign key (`xxx4_id`) 
-       references `xxx4` (`id`);
-
     alter table `message` 
        add constraint `FKn5adlx3oqjna7aupm8gwg3fuj` 
        foreign key (`message_thread_id`) 
@@ -560,6 +545,11 @@ create index IDX7mpr4u7oxcyr0nrl5osmj05uh on `requeststore` (`ticker`);
        add constraint `FKrcem4cf2s7ir1wwyaux4p9ke8` 
        foreign key (`sponsor_id`) 
        references `sponsor` (`id`);
+
+    alter table `passfa` 
+       add constraint `FKkw4t9uytyi2b59wi5qcjv67xe` 
+       foreign key (`job_id`) 
+       references `job` (`id`);
 
     alter table `provider` 
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 

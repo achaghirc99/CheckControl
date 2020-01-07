@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -22,7 +21,6 @@ import org.hibernate.validator.constraints.Length;
 import acme.entities.jobs.Job;
 import acme.entities.roles.Worker;
 import acme.entities.spams.Spamlist;
-import acme.entities.xxx4s.XXX4;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -65,11 +63,12 @@ public class Application extends DomainEntity {
 	 * Esto es lo nuevo añadido para el checkControl
 	 */
 
-	@Valid
-	@OneToOne(optional = true)
-	private XXX4				xxx4;
-
 	private String				answer;
+
+	private String				trackNumber;
+
+	@Pattern(regexp = "(^(?=.*[A-z]{1,})(?=.*\\d{1,})(?=.*\\p{P}{1,}).{10,}$)?", message = "The password must have minimum, one letter, one digit and one symbol punctuation, and the length must be minimum 10 characters")
+	private String				password;
 
 	//---------------------------------------------------------------------------------------
 

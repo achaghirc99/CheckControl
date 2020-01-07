@@ -60,18 +60,18 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 			int IdDescriptor = entity.getDescriptor().getId();
 			model.setAttribute("idDescriptor", IdDescriptor);
 		}
-		boolean haveChallenge = entity.getChallenge() != null;
-		model.setAttribute("haveChallenge", haveChallenge);
-		if (haveChallenge) {
-			if (entity.getChallenge().getText() != null || entity.getChallenge().getMoreInfo() != "") {
-				boolean haveTextChallenge = entity.getChallenge().getText() != null || entity.getChallenge().getText() != "";
-				model.setAttribute("textChallenge", haveTextChallenge);
-				request.unbind(entity, model, "challenge.text");
+		boolean havePassfa = entity.getPassfa() != null;
+		model.setAttribute("havePassfa", havePassfa);
+		if (havePassfa) {
+			if (entity.getPassfa().getText() != null || entity.getPassfa().getTrackNumber() != "") {
+				boolean haveTextPassfa = entity.getPassfa().getText() != null || entity.getPassfa().getText() != "";
+				model.setAttribute("textPassfa", haveTextPassfa);
+				request.unbind(entity, model, "passfa.text");
 			}
-			if (entity.getChallenge().getMoreInfo() != null) {
-				boolean haveMoreInfoChallenge = entity.getChallenge().getMoreInfo() != null;
-				model.setAttribute("moreInfoChallenge", haveMoreInfoChallenge);
-				request.unbind(entity, model, "challenge.moreInfo");
+			if (entity.getPassfa().getTrackNumber() != null) {
+				boolean trackNumberPassfa = entity.getPassfa().getTrackNumber() != null;
+				model.setAttribute("trackNumberPassfa", trackNumberPassfa);
+				request.unbind(entity, model, "passfa.trackNumber");
 			}
 		}
 		/**

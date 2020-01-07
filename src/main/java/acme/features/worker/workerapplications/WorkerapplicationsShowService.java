@@ -44,13 +44,22 @@ public class WorkerapplicationsShowService implements AbstractShowService<Worker
 		request.unbind(entity, model, "referenceNumber", "moment", "status", "statement", "skills", "qualifications", "justification");
 
 		model.setAttribute("applicationId", entity.getId());
-		boolean haveAnswer = entity.getAnswer() != null || entity.getAnswer() != "";
+		boolean haveAnswer = entity.getAnswer() != null;
 		model.setAttribute("haveAnswer", haveAnswer);
-		if (entity.getXxx4() != null) {
-			boolean havePassword = entity.getXxx4().getPassword() != null;
+		if (haveAnswer) {
+			request.unbind(entity, model, "answer");
+		}
+		if (entity.getTrackNumber() != null) {
+			boolean haveTrackNumber = entity.getTrackNumber() != null;
+			model.setAttribute("haveTrackNumber", haveTrackNumber);
+			request.unbind(entity, model, "trackNumber");
+		}
+
+		if (entity.getPassword() != null) {
+			boolean havePassword = entity.getPassword() != null;
 			model.setAttribute("havePassword", havePassword);
 			if (havePassword) {
-				request.unbind(entity, model, "xxx4.password");
+				request.unbind(entity, model, "password");
 				model.setAttribute("password", "[MASKED-PROTECTED]");
 			}
 		}

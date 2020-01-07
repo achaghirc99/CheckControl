@@ -35,10 +35,10 @@ public class DashboardList extends DomainEntity {
 
 	Double						desviationOffers;
 
-	Double						ratioOfJobsWithChallenge;
+	Double						ratioOfJobsWithPassfas;
 
-	Double						ratioChallengeWithMoreInfo;
+	Double						ratioPassfasWithTrackNumber;
 
-	Double						ratioOfApplicationsWithPasworedXxx4;
+	Double						ratioOfApplicationsWithPasworedTrackNumber;
 
 }

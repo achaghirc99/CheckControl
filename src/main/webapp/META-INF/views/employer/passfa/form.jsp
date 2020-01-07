@@ -19,9 +19,8 @@
 
 <acme:form>
 		
-		<acme:form-textarea code="employer.job.form.label.challenge.text" path="text" placeholder="Text of Challenge" />	
-		<acme:form-url code="employer.job.form.label.challenge.moreInfo" path="moreInfo" placeholder="http://www.example.com" />	
-		<acme:form-password code="employer.job.form.label.challenge.password" path="xxx4.password"/>
-		<acme:form-submit code="employer.job.form.button.challenge.create" action="/employer/jobchallenge/create?id=${jobId}"/>
-		<acme:form-return code="employer.job.form.button.challenge.return"/>
+		<acme:form-textarea code="employer.job.form.label.passfa.text" path="text" placeholder="Text of passfa" />	
+		<acme:form-url code="employer.job.form.label.passfa.trackNumber" path="trackNumber" placeholder="http://www.example.com" />	
+		<acme:form-submit code="employer.job.form.button.passfa.create" action="/employer/passfa/create?id=${jobId}"/>
+		<acme:form-return code="employer.job.form.button.passfa.return"/>
 </acme:form>

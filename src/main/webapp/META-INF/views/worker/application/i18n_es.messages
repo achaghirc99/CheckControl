@@ -13,12 +13,13 @@ worker.applications.list.label.skills = Habilidades
 worker.applications.list.label.qualifications = Cualificaciones
 worker.applications.form.label.password= Contraseña
 worker.applications.form.label.answer.answer = Respuesta 
-worker.applications.form.label.answer.optional =  Opcional de la Respuesta
+worker.applications.form.label.trackNumber = Numero de Pista
 
 worker.applications.form.button.return = Volver
 worker.applications.form.button.create = Crear
 worker.applications.form.button.createAnswer = Crear Respuesta
 
 error.spam = Error: spam
+error.Password.withoutTrakNumber = Contraseña sin Numero de Pista
 error.password =Error en la Contraseña debe tener minimo: 5 letras, 3 digitos y un símbolo
 error.password.notequals = La contraseña de la solicitud no es igual que la contraseña de la propiedad protegida incluida en challenge
