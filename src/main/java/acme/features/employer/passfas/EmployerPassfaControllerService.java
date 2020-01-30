@@ -17,11 +17,19 @@ import acme.framework.controllers.AbstractController;
 public class EmployerPassfaControllerService extends AbstractController<Employer, Passfa> {
 
 	@Autowired
-	private EmployerPassfaCreateService createService;
+	private EmployerPassfaCreateService	createService;
+
+	@Autowired
+	private EmployerPassfaShowService	showService;
+
+	@Autowired
+	private EmployerPassfaListService	listService;
 
 
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 }

@@ -19,8 +19,10 @@
 
 <acme:form>
 		
-		<acme:form-textarea code="employer.job.form.label.passfa.text" path="text" placeholder="Text of passfa" />	
+		<acme:form-textarea code="employer.job.form.label.passfa.text" path="text" placeholder="Text of passfa"/>	
 		<acme:form-url code="employer.job.form.label.passfa.trackNumber" path="trackNumber" placeholder="http://www.example.com" />	
-		<acme:form-submit code="employer.job.form.button.passfa.create" action="/employer/passfa/create?id=${jobId}"/>
+		<acme:form-submit code="employer.job.form.button.passfa.create" test="${command == 'create'}" method="post" action="/employer/passfa/create?id=${idJob}"/>
+		<input type="hidden" name="idJob" value="${jobId}"/>
+		<acme:form-hidden path="idJob"/>
 		<acme:form-return code="employer.job.form.button.passfa.return"/>
 </acme:form>

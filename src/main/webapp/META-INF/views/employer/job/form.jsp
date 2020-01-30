@@ -41,6 +41,7 @@
 		<acme:form-submit code="employer.job.form.button.auditRecord" method="get" action="/employer/auditrecord/list?id=${jobId}"/>	
 		<acme:form-submit code="employer.job.form.button.update" test="${finalMode == false}"  method="get" action="/employer/job/update?id=${jobId}"/>
 		<acme:form-submit code="employer.job.form.button.job.createPassfa" method="get" action="/employer/passfa/create?id=${jobId}"/>
+		<input type="hidden" name="idJob" value="${jobId}"/>
 		<acme:form-submit code="employer.job.form.button.delete" action="/employer/job/delete"/>
 </acme:form>
 </jstl:if>

@@ -23,16 +23,23 @@ public class EmployerPassfaCreateService implements AbstractCreateService<Employ
 	@Override
 	public boolean authorise(final Request<Passfa> request) {
 		assert request != null;
-		boolean res = false;
+		boolean res = true;
 
-		Integer id = request.getModel().getInteger("id");
+		String jobId = request.getServletRequest().getParameter("id");
 		Principal principal = request.getPrincipal();
-
-		Job job = this.repositorty.getJobById(id);
-
-		Employer e = job.getEmployer();
-
+		Employer e;
+		Job job = this.repositorty.getJobById(Integer.parseInt(jobId));
+		e = job.getEmployer();
 		res = principal.getActiveRoleId() == e.getId();
+
+		//		String jobId = request.getServletRequest().getParameter("id");
+		//		Job job = this.repositorty.getJobById(Integer.parseInt(jobId));
+		//
+		//		Principal principal = request.getPrincipal();
+		//		Integer IdPricipal = principal.getActiveRoleId();
+		//		Collection<Job> job2 = this.repositorty.getAllJobsById(IdPricipal);
+		//
+		//		res = job2.contains(job);
 
 		return res;
 	}
@@ -54,7 +61,8 @@ public class EmployerPassfaCreateService implements AbstractCreateService<Employ
 		assert model != null;
 
 		request.unbind(entity, model, "text", "trackNumber");
-		model.setAttribute("jobId", entity.getJob().getId());
+		String jobId = request.getServletRequest().getParameter("id");
+		model.setAttribute("idJob", jobId);
 	}
 
 	@Override
@@ -78,6 +86,7 @@ public class EmployerPassfaCreateService implements AbstractCreateService<Employ
 
 		boolean nonHavePassfa = entity.getJob().getPassfa() == null;
 		errors.state(request, nonHavePassfa, "text", "error.job.havePassfa");
+		request.getModel().setAttribute("idJob", entity.getJob().getId());
 
 	}
 
@@ -90,6 +99,7 @@ public class EmployerPassfaCreateService implements AbstractCreateService<Employ
 		if (trackNumber == "" || trackNumber == null) {
 			entity.setTrackNumber(null);
 		}
+
 		this.repositorty.save(entity);
 
 	}

@@ -5,3 +5,5 @@ employer.job.form.button.passfa.create = Crear
 employer.job.form.button.passfa.return = Volver
 
 error.job.haveChallenge = Este trabajo ya tiene un reto 
+
+employer.job.list.label.text = Texto

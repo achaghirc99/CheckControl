@@ -71,7 +71,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 
 		if (entity.getPassfa() != null) {
 			model.setAttribute("textChallenge", entity.getPassfa().getText());
-			request.unbind(entity, model, "challenge.text", "challenge.moreInfo");
+			request.unbind(entity, model, "passfa.text", "passfa.trackNumber");
 
 			if (entity.getPassfa().getTrackNumber() != "" || entity.getPassfa().getTrackNumber() != null) {
 				model.setAttribute("moreInfoChallenge", entity.getPassfa().getTrackNumber());

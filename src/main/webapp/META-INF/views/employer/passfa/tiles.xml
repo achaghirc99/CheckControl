@@ -21,4 +21,8 @@
 	<definition name="employer/passfa/form" extends="master">
 		<put-attribute name="body" type="template" value="../employer/passfa/form.jsp" />
 	</definition>
+	
+	<definition name="employer/passfa/list" extends="master">
+		<put-attribute name="body" type="template" value="../employer/passfa/list.jsp" />
+	</definition>
 </tiles-definitions>
